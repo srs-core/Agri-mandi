@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>AgriMandi</title>
+  <style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            font-family: 'Arial', sans-serif;
+        }
+  body {
+            background: linear-gradient(to bottom, #000000, #0a0a2a, #000000);
+            color: #fff;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+    header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 20px;
+            background-color: rgba(0,0,0,0.7);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    .logo-container { display: flex; align-items: center; }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .logo-text { font-size: 1.2rem; font-weight: bold; }
+    nav ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li { margin: 0.5rem 1rem; }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover { color: #777778; }
+        nav ul li a.active { color: #fdcf58; }
+        nav ul li a.active:hover { color: #ae8e3c; }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 3px;
+        }
+    
+  </style>
+</head>
+  <body>
+    
+  </body>
+</html>
