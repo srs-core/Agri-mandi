@@ -1,0 +1,121 @@
+commodity,horizon,rank,feature,raw_gain,gain_percentage
+Potato (Jyoti),t1,1,rolling_median_7,114549504.0,29.01%
+Potato (Jyoti),t1,2,modal_price,81731304.0,20.7%
+Potato (Jyoti),t1,3,lag_1,52734164.0,13.36%
+Potato (Jyoti),t1,4,rolling_mean_7,28470038.0,7.21%
+Potato (Jyoti),t1,5,lag_30,22933334.0,5.81%
+Potato (Jyoti),t1,6,rolling_min_7,14136336.0,3.58%
+Potato (Jyoti),t1,7,rolling_mean_14,8059996.0,2.04%
+Potato (Jyoti),t1,8,benchmark_price,6609866.5,1.67%
+Potato (Jyoti),t1,9,rolling_max_7,6558757.5,1.66%
+Potato (Jyoti),t1,10,spread_vs_benchmark,6536597.0,1.66%
+Potato (Jyoti),t3,1,rolling_median_7,90893688.0,32.26%
+Potato (Jyoti),t3,2,modal_price,55723044.0,19.78%
+Potato (Jyoti),t3,3,is_saturday,23044576.0,8.18%
+Potato (Jyoti),t3,4,rolling_mean_7,18642912.0,6.62%
+Potato (Jyoti),t3,5,lag_1,18534340.0,6.58%
+Potato (Jyoti),t3,6,rolling_std_7,6826146.0,2.42%
+Potato (Jyoti),t3,7,rolling_mean_14,5107590.0,1.81%
+Potato (Jyoti),t3,8,max_price,4056963.0,1.44%
+Potato (Jyoti),t3,9,season_kharif,3959640.5,1.41%
+Potato (Jyoti),t3,10,lag_14,3543262.25,1.26%
+Potato (Jyoti),t7,1,rolling_median_7,181714064.0,28.24%
+Potato (Jyoti),t7,2,modal_price,148759264.0,23.12%
+Potato (Jyoti),t7,3,lag_1,109535744.0,17.02%
+Potato (Jyoti),t7,4,rolling_mean_7,44304040.0,6.88%
+Potato (Jyoti),t7,5,min_price,21527130.0,3.35%
+Potato (Jyoti),t7,6,rolling_mean_14,11053741.0,1.72%
+Potato (Jyoti),t7,7,rolling_min_7,8472479.0,1.32%
+Potato (Jyoti),t7,8,lag_3,7119424.0,1.11%
+Potato (Jyoti),t7,9,season_rabi,6620599.5,1.03%
+Potato (Jyoti),t7,10,day_of_year,6589663.5,1.02%
+Onion (Nashik Red),t1,1,modal_price,329843744.0,34.86%
+Onion (Nashik Red),t1,2,max_price,213161328.0,22.53%
+Onion (Nashik Red),t1,3,lag_1,131635656.0,13.91%
+Onion (Nashik Red),t1,4,rolling_mean_7,129783608.0,13.72%
+Onion (Nashik Red),t1,5,benchmark_price,15270384.0,1.61%
+Onion (Nashik Red),t1,6,rolling_min_7,11533687.0,1.22%
+Onion (Nashik Red),t1,7,rolling_max_7,11099539.0,1.17%
+Onion (Nashik Red),t1,8,sin_day_of_year,7594141.0,0.8%
+Onion (Nashik Red),t1,9,day_of_year,6398681.0,0.68%
+Onion (Nashik Red),t1,10,season_rabi,5979034.0,0.63%
+Onion (Nashik Red),t3,1,modal_price,203478912.0,48.5%
+Onion (Nashik Red),t3,2,lag_1,36533128.0,8.71%
+Onion (Nashik Red),t3,3,month,31288062.0,7.46%
+Onion (Nashik Red),t3,4,benchmark_price,18331658.0,4.37%
+Onion (Nashik Red),t3,5,week_of_year,15606254.0,3.72%
+Onion (Nashik Red),t3,6,rolling_mean_7,9440448.0,2.25%
+Onion (Nashik Red),t3,7,sin_day_of_year,8947048.0,2.13%
+Onion (Nashik Red),t3,8,cos_month,8418937.0,2.01%
+Onion (Nashik Red),t3,9,cos_day_of_year,7144724.5,1.7%
+Onion (Nashik Red),t3,10,day_of_year,6141072.5,1.46%
+Onion (Nashik Red),t7,1,benchmark_price,282820800.0,46.36%
+Onion (Nashik Red),t7,2,modal_price,55892468.0,9.16%
+Onion (Nashik Red),t7,3,sin_day_of_year,29248856.0,4.79%
+Onion (Nashik Red),t7,4,rolling_mean_7,20816066.0,3.41%
+Onion (Nashik Red),t7,5,lag_1,20383654.0,3.34%
+Onion (Nashik Red),t7,6,rolling_min_7,17479478.0,2.87%
+Onion (Nashik Red),t7,7,cos_day_of_year,14217387.0,2.33%
+Onion (Nashik Red),t7,8,sin_month,13961933.0,2.29%
+Onion (Nashik Red),t7,9,week_of_year,13719492.0,2.25%
+Onion (Nashik Red),t7,10,pct_spread_vs_benchmark,11505457.0,1.89%
+Wheat (Sharbati),t1,1,rolling_mean_30,43040784.0,34.42%
+Wheat (Sharbati),t1,2,rolling_median_7,27669876.0,22.13%
+Wheat (Sharbati),t1,3,rolling_min_7,13819976.0,11.05%
+Wheat (Sharbati),t1,4,rolling_mean_7,10078282.0,8.06%
+Wheat (Sharbati),t1,5,rolling_median_30,9217115.0,7.37%
+Wheat (Sharbati),t1,6,modal_price,3621299.25,2.9%
+Wheat (Sharbati),t1,7,rolling_mean_14,3035446.0,2.43%
+Wheat (Sharbati),t1,8,rolling_max_7,2292210.25,1.83%
+Wheat (Sharbati),t1,9,lag_1,2216564.0,1.77%
+Wheat (Sharbati),t1,10,lag_7,1529039.62,1.22%
+Wheat (Sharbati),t3,1,rolling_mean_30,31718222.0,28.53%
+Wheat (Sharbati),t3,2,rolling_median_7,21897780.0,19.7%
+Wheat (Sharbati),t3,3,rolling_mean_7,17226096.0,15.5%
+Wheat (Sharbati),t3,4,rolling_median_30,15569863.0,14.01%
+Wheat (Sharbati),t3,5,rolling_mean_14,4430242.5,3.99%
+Wheat (Sharbati),t3,6,rolling_min_7,4273291.5,3.84%
+Wheat (Sharbati),t3,7,rolling_max_7,2434570.25,2.19%
+Wheat (Sharbati),t3,8,lag_14,2093749.62,1.88%
+Wheat (Sharbati),t3,9,lag_1,1529659.25,1.38%
+Wheat (Sharbati),t3,10,modal_price,1520157.38,1.37%
+Wheat (Sharbati),t7,1,rolling_median_30,31489116.0,26.26%
+Wheat (Sharbati),t7,2,rolling_mean_7,24558582.0,20.48%
+Wheat (Sharbati),t7,3,rolling_median_7,14422057.0,12.03%
+Wheat (Sharbati),t7,4,rolling_mean_30,14001071.0,11.67%
+Wheat (Sharbati),t7,5,rolling_mean_14,11584472.0,9.66%
+Wheat (Sharbati),t7,6,rolling_min_7,8493593.0,7.08%
+Wheat (Sharbati),t7,7,lag_14,2180490.25,1.82%
+Wheat (Sharbati),t7,8,rolling_max_7,1840567.25,1.53%
+Wheat (Sharbati),t7,9,modal_price,1537335.5,1.28%
+Wheat (Sharbati),t7,10,lag_7,1023890.0,0.85%
+Tomato (Hybrid),t1,1,sin_day_of_year,341742752.0,31.73%
+Tomato (Hybrid),t1,2,week_of_year,192403984.0,17.87%
+Tomato (Hybrid),t1,3,day_of_year,152035424.0,14.12%
+Tomato (Hybrid),t1,4,modal_price,49032036.0,4.55%
+Tomato (Hybrid),t1,5,rolling_median_7,48125860.0,4.47%
+Tomato (Hybrid),t1,6,rolling_mean_7,45803964.0,4.25%
+Tomato (Hybrid),t1,7,rolling_max_7,38849980.0,3.61%
+Tomato (Hybrid),t1,8,rolling_std_30,15576354.0,1.45%
+Tomato (Hybrid),t1,9,lag_1,14690651.0,1.36%
+Tomato (Hybrid),t1,10,is_monday,12829696.0,1.19%
+Tomato (Hybrid),t3,1,sin_day_of_year,273427808.0,31.59%
+Tomato (Hybrid),t3,2,day_of_year,119078512.0,13.76%
+Tomato (Hybrid),t3,3,rolling_min_7,73216344.0,8.46%
+Tomato (Hybrid),t3,4,rolling_max_7,39344880.0,4.55%
+Tomato (Hybrid),t3,5,rolling_mean_7,37529732.0,4.34%
+Tomato (Hybrid),t3,6,rolling_median_7,34839620.0,4.03%
+Tomato (Hybrid),t3,7,modal_price,26370970.0,3.05%
+Tomato (Hybrid),t3,8,max_price,22309858.0,2.58%
+Tomato (Hybrid),t3,9,rolling_mean_14,21664930.0,2.5%
+Tomato (Hybrid),t3,10,lag_7,18825948.0,2.18%
+Tomato (Hybrid),t7,1,week_of_year,368103744.0,32.25%
+Tomato (Hybrid),t7,2,month,155114752.0,13.59%
+Tomato (Hybrid),t7,3,day_of_year,151582176.0,13.28%
+Tomato (Hybrid),t7,4,sin_day_of_year,112426168.0,9.85%
+Tomato (Hybrid),t7,5,rolling_median_7,70610096.0,6.19%
+Tomato (Hybrid),t7,6,rolling_max_7,44741180.0,3.92%
+Tomato (Hybrid),t7,7,rolling_mean_7,32407392.0,2.84%
+Tomato (Hybrid),t7,8,rolling_min_7,24541242.0,2.15%
+Tomato (Hybrid),t7,9,rolling_std_30,20697886.0,1.81%
+Tomato (Hybrid),t7,10,rolling_mean_14,12787279.0,1.12%

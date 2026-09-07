@@ -1,0 +1,4083 @@
+{
+  "report_generated_at": "2026-08-29T15:51:39.875639",
+  "summary": {
+    "total_input_records": 51813,
+    "total_feature_rows_generated": 41592,
+    "warmup_window_observations_dropped_per_series": 30,
+    "commodity_breakdown": {
+      "Potato (Jyoti)": 12363,
+      "Onion (Nashik Red)": 22714,
+      "Wheat (Sharbati)": 5825,
+      "Tomato (Hybrid)": 690
+    },
+    "chronological_splits": {
+      "Potato": {
+        "train": 9160,
+        "val": 1803,
+        "test": 1400
+      },
+      "Onion": {
+        "train": 17282,
+        "val": 2282,
+        "test": 3150
+      },
+      "Wheat": {
+        "train": 5825
+      },
+      "Tomato": {
+        "train": 690
+      }
+    }
+  },
+  "commodity_details": [
+    {
+      "commodity": "Potato (Jyoti)",
+      "crop_tier": "TIER_1",
+      "output_file": "data\\processed\\ml\\features\\potato_features.csv",
+      "file_size_bytes": 4731582,
+      "sha256": "6c04ba1f81350d1a0cbba8c955251f83b9ddf497aaf18d89dae07e4ca98165a6",
+      "total_series_processed": 37,
+      "total_feature_rows": 12363,
+      "split_distribution": {
+        "train": 9160,
+        "val": 1803,
+        "test": 1400
+      },
+      "benchmark_market_used": "Solapur APMC",
+      "series_diagnostics": [
+        {
+          "market": "Vashi APMC (Mumbai)",
+          "variety": "Other",
+          "raw_records": 550,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 520,
+          "valid_t1_targets": 519,
+          "earliest_feature_date": "2023-07-11",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 395,
+            "val": 68,
+            "test": 57
+          }
+        },
+        {
+          "market": "Rahata APMC",
+          "variety": "Other",
+          "raw_records": 598,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 568,
+          "valid_t1_targets": 567,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 436,
+            "val": 75,
+            "test": 57
+          }
+        },
+        {
+          "market": "Pune APMC (Manjri Sub-yard)",
+          "variety": "Other",
+          "raw_records": 659,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 629,
+          "valid_t1_targets": 628,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 478,
+            "val": 84,
+            "test": 67
+          }
+        },
+        {
+          "market": "Khed APMC (Chakan Yard)",
+          "variety": "Other",
+          "raw_records": 494,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 464,
+          "valid_t1_targets": 463,
+          "earliest_feature_date": "2023-07-25",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 342,
+            "val": 69,
+            "test": 53
+          }
+        },
+        {
+          "market": "Bhusaval APMC",
+          "variety": "Other",
+          "raw_records": 509,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 479,
+          "valid_t1_targets": 478,
+          "earliest_feature_date": "2023-07-21",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 355,
+            "val": 71,
+            "test": 53
+          }
+        },
+        {
+          "market": "Satara APMC",
+          "variety": "Other",
+          "raw_records": 484,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 454,
+          "valid_t1_targets": 453,
+          "earliest_feature_date": "2023-07-25",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 335,
+            "val": 70,
+            "test": 49
+          }
+        },
+        {
+          "market": "Nashik APMC",
+          "variety": "Other",
+          "raw_records": 542,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 512,
+          "valid_t1_targets": 511,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 386,
+            "val": 71,
+            "test": 55
+          }
+        },
+        {
+          "market": "Kamthi APMC",
+          "variety": "Local",
+          "raw_records": 481,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 451,
+          "valid_t1_targets": 450,
+          "earliest_feature_date": "2023-07-26",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 338,
+            "val": 63,
+            "test": 50
+          }
+        },
+        {
+          "market": "Ramtek APMC",
+          "variety": "Local",
+          "raw_records": 258,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 228,
+          "valid_t1_targets": 227,
+          "earliest_feature_date": "2023-08-24",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 164,
+            "val": 31,
+            "test": 33
+          }
+        },
+        {
+          "market": "Pune APMC (Gultekdi)",
+          "variety": "Local",
+          "raw_records": 578,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 548,
+          "valid_t1_targets": 547,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 419,
+            "val": 72,
+            "test": 57
+          }
+        },
+        {
+          "market": "Akola APMC",
+          "variety": "Other",
+          "raw_records": 533,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 503,
+          "valid_t1_targets": 502,
+          "earliest_feature_date": "2023-07-15",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 384,
+            "val": 70,
+            "test": 49
+          }
+        },
+        {
+          "market": "Pen APMC",
+          "variety": "Local",
+          "raw_records": 113,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 83,
+          "valid_t1_targets": 82,
+          "earliest_feature_date": "2023-09-09",
+          "latest_feature_date": "2024-07-03",
+          "split_counts": {
+            "train": 83
+          }
+        },
+        {
+          "market": "Pune APMC (Khadki Sub-yard)",
+          "variety": "Local",
+          "raw_records": 578,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 548,
+          "valid_t1_targets": 547,
+          "earliest_feature_date": "2023-07-27",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 413,
+            "val": 75,
+            "test": 60
+          }
+        },
+        {
+          "market": "Pune APMC (Moshi Sub-yard)",
+          "variety": "Local",
+          "raw_records": 600,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 570,
+          "valid_t1_targets": 569,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 437,
+            "val": 73,
+            "test": 60
+          }
+        },
+        {
+          "market": "Amravati APMC",
+          "variety": "Local",
+          "raw_records": 570,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 540,
+          "valid_t1_targets": 539,
+          "earliest_feature_date": "2023-07-15",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 411,
+            "val": 70,
+            "test": 59
+          }
+        },
+        {
+          "market": "Vai APMC",
+          "variety": "Local",
+          "raw_records": 335,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 305,
+          "valid_t1_targets": 304,
+          "earliest_feature_date": "2023-08-24",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 241,
+            "val": 38,
+            "test": 26
+          }
+        },
+        {
+          "market": "Jalgaon APMC",
+          "variety": "Other",
+          "raw_records": 509,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 479,
+          "valid_t1_targets": 478,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 375,
+            "val": 58,
+            "test": 46
+          }
+        },
+        {
+          "market": "Islampur APMC",
+          "variety": "Other",
+          "raw_records": 104,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 74,
+          "valid_t1_targets": 73,
+          "earliest_feature_date": "2023-10-12",
+          "latest_feature_date": "2025-06-06",
+          "split_counts": {
+            "train": 61,
+            "val": 2,
+            "test": 11
+          }
+        },
+        {
+          "market": "Sangli(Phale, Bhajipura Market) APMC",
+          "variety": "Local",
+          "raw_records": 509,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 479,
+          "valid_t1_targets": 478,
+          "earliest_feature_date": "2023-07-14",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 352,
+            "val": 68,
+            "test": 59
+          }
+        },
+        {
+          "market": "Solapur APMC",
+          "variety": "Local",
+          "raw_records": 537,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 507,
+          "valid_t1_targets": 506,
+          "earliest_feature_date": "2023-07-14",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 391,
+            "val": 64,
+            "test": 52
+          }
+        },
+        {
+          "market": "Junnar APMC (Otur Sub-yard)",
+          "variety": "Local",
+          "raw_records": 219,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 189,
+          "valid_t1_targets": 188,
+          "earliest_feature_date": "2023-12-23",
+          "latest_feature_date": "2025-06-08",
+          "split_counts": {
+            "train": 121,
+            "val": 53,
+            "test": 15
+          }
+        },
+        {
+          "market": "Nagpur APMC",
+          "variety": "Local",
+          "raw_records": 414,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 384,
+          "valid_t1_targets": 383,
+          "earliest_feature_date": "2023-07-26",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 280,
+            "val": 54,
+            "test": 50
+          }
+        },
+        {
+          "market": "Chandrapur(Ganjwad) APMC",
+          "variety": "Other",
+          "raw_records": 304,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 274,
+          "valid_t1_targets": 273,
+          "earliest_feature_date": "2023-08-02",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 179,
+            "val": 51,
+            "test": 44
+          }
+        },
+        {
+          "market": "Akluj APMC",
+          "variety": "Other",
+          "raw_records": 456,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 426,
+          "valid_t1_targets": 425,
+          "earliest_feature_date": "2023-07-14",
+          "latest_feature_date": "2025-06-08",
+          "split_counts": {
+            "train": 350,
+            "val": 46,
+            "test": 30
+          }
+        },
+        {
+          "market": "Rahuri APMC",
+          "variety": "Other",
+          "raw_records": 364,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 334,
+          "valid_t1_targets": 333,
+          "earliest_feature_date": "2023-07-20",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 219,
+            "val": 72,
+            "test": 43
+          }
+        },
+        {
+          "market": "Shrirampur APMC",
+          "variety": "Other",
+          "raw_records": 559,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 529,
+          "valid_t1_targets": 528,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 399,
+            "val": 73,
+            "test": 57
+          }
+        },
+        {
+          "market": "Junnar APMC",
+          "variety": "Local",
+          "raw_records": 100,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 70,
+          "valid_t1_targets": 69,
+          "earliest_feature_date": "2023-12-21",
+          "latest_feature_date": "2025-06-05",
+          "split_counts": {
+            "train": 42,
+            "val": 13,
+            "test": 15
+          }
+        },
+        {
+          "market": "Junnar APMC (Narayangaon Sub-yard)",
+          "variety": "Other",
+          "raw_records": 326,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 296,
+          "valid_t1_targets": 295,
+          "earliest_feature_date": "2023-09-02",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 206,
+            "val": 55,
+            "test": 35
+          }
+        },
+        {
+          "market": "Vadgaonpeth APMC",
+          "variety": "Local",
+          "raw_records": 34,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 4,
+          "valid_t1_targets": 3,
+          "earliest_feature_date": "2025-03-18",
+          "latest_feature_date": "2025-06-06",
+          "split_counts": {
+            "val": 1,
+            "test": 3
+          }
+        },
+        {
+          "market": "Ahmednagar APMC",
+          "variety": "Other",
+          "raw_records": 215,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 185,
+          "valid_t1_targets": 184,
+          "earliest_feature_date": "2023-09-22",
+          "latest_feature_date": "2025-06-01",
+          "split_counts": {
+            "train": 138,
+            "val": 30,
+            "test": 17
+          }
+        },
+        {
+          "market": "Manchar APMC",
+          "variety": "Other",
+          "raw_records": 118,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 88,
+          "valid_t1_targets": 87,
+          "earliest_feature_date": "2024-10-30",
+          "latest_feature_date": "2025-06-07",
+          "split_counts": {
+            "train": 12,
+            "val": 47,
+            "test": 29
+          }
+        },
+        {
+          "market": "Kalyan APMC",
+          "variety": "Other",
+          "raw_records": 253,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 223,
+          "valid_t1_targets": 222,
+          "earliest_feature_date": "2024-05-07",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 145,
+            "val": 43,
+            "test": 35
+          }
+        },
+        {
+          "market": "Hingna APMC",
+          "variety": "Other",
+          "raw_records": 37,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 7,
+          "valid_t1_targets": 6,
+          "earliest_feature_date": "2024-04-03",
+          "latest_feature_date": "2024-04-15",
+          "split_counts": {
+            "train": 7
+          }
+        },
+        {
+          "market": "Vita APMC",
+          "variety": "Other",
+          "raw_records": 72,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 42,
+          "valid_t1_targets": 41,
+          "earliest_feature_date": "2024-08-05",
+          "latest_feature_date": "2025-06-08",
+          "split_counts": {
+            "train": 20,
+            "val": 10,
+            "test": 12
+          }
+        },
+        {
+          "market": "Manchar APMC",
+          "variety": "Local",
+          "raw_records": 144,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 114,
+          "valid_t1_targets": 113,
+          "earliest_feature_date": "2023-11-19",
+          "latest_feature_date": "2025-04-18",
+          "split_counts": {
+            "train": 105,
+            "val": 8,
+            "test": 1
+          }
+        },
+        {
+          "market": "Hingna APMC",
+          "variety": "Local",
+          "raw_records": 274,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 244,
+          "valid_t1_targets": 243,
+          "earliest_feature_date": "2024-06-03",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 141,
+            "val": 55,
+            "test": 48
+          }
+        },
+        {
+          "market": "Akluj APMC",
+          "variety": "Local",
+          "raw_records": 43,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 13,
+          "valid_t1_targets": 12,
+          "earliest_feature_date": "2025-04-28",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "test": 13
+          }
+        }
+      ]
+    },
+    {
+      "commodity": "Onion (Nashik Red)",
+      "crop_tier": "TIER_1",
+      "output_file": "data\\processed\\ml\\features\\onion_features.csv",
+      "file_size_bytes": 8975015,
+      "sha256": "2b356a071837d458cf9f4dbb0136fcf1291b18f59abc6f79995548f8f2d0f1df",
+      "total_series_processed": 126,
+      "total_feature_rows": 22714,
+      "split_distribution": {
+        "train": 17282,
+        "val": 2282,
+        "test": 3150
+      },
+      "benchmark_market_used": "Lasalgaon APMC",
+      "series_diagnostics": [
+        {
+          "market": "Pathardi APMC",
+          "variety": "Red",
+          "raw_records": 206,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 176,
+          "valid_t1_targets": 175,
+          "earliest_feature_date": "2023-08-20",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 138,
+            "val": 17,
+            "test": 21
+          }
+        },
+        {
+          "market": "Pratap Nana Mahale Khajgi Bajar Samiti APMC",
+          "variety": "Red",
+          "raw_records": 31,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 1,
+          "valid_t1_targets": 0,
+          "earliest_feature_date": "2023-08-09",
+          "latest_feature_date": "2023-08-09",
+          "split_counts": {
+            "train": 1
+          }
+        },
+        {
+          "market": "Phaltan APMC",
+          "variety": "Hybrid",
+          "raw_records": 48,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 18,
+          "valid_t1_targets": 17,
+          "earliest_feature_date": "2024-05-21",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 12,
+            "val": 3,
+            "test": 3
+          }
+        },
+        {
+          "market": "Pimpalgaon Baswant APMC",
+          "variety": "Other",
+          "raw_records": 389,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 359,
+          "valid_t1_targets": 358,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 280,
+            "val": 22,
+            "test": 57
+          }
+        },
+        {
+          "market": "Pimpalgaon Baswant(Saykheda) APMC",
+          "variety": "Other",
+          "raw_records": 351,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 321,
+          "valid_t1_targets": 320,
+          "earliest_feature_date": "2023-07-14",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 245,
+            "val": 21,
+            "test": 55
+          }
+        },
+        {
+          "market": "Vashi APMC (Mumbai)",
+          "variety": "Other",
+          "raw_records": 482,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 452,
+          "valid_t1_targets": 451,
+          "earliest_feature_date": "2023-07-11",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 359,
+            "val": 37,
+            "test": 56
+          }
+        },
+        {
+          "market": "Manchar APMC",
+          "variety": "Other",
+          "raw_records": 212,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 182,
+          "valid_t1_targets": 181,
+          "earliest_feature_date": "2023-08-27",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 141,
+            "val": 19,
+            "test": 22
+          }
+        },
+        {
+          "market": "Rahuri APMC",
+          "variety": "Other",
+          "raw_records": 205,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 175,
+          "valid_t1_targets": 174,
+          "earliest_feature_date": "2023-08-20",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 133,
+            "val": 15,
+            "test": 27
+          }
+        },
+        {
+          "market": "Sangamner APMC",
+          "variety": "Other",
+          "raw_records": 326,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 296,
+          "valid_t1_targets": 295,
+          "earliest_feature_date": "2023-07-18",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 227,
+            "val": 19,
+            "test": 50
+          }
+        },
+        {
+          "market": "Satana APMC",
+          "variety": "Other",
+          "raw_records": 229,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 199,
+          "valid_t1_targets": 198,
+          "earliest_feature_date": "2023-07-26",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 155,
+            "val": 9,
+            "test": 35
+          }
+        },
+        {
+          "market": "Lasalgaon APMC",
+          "variety": "Other",
+          "raw_records": 802,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 772,
+          "valid_t1_targets": 771,
+          "earliest_feature_date": "2023-06-23",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 599,
+            "val": 64,
+            "test": 109
+          }
+        },
+        {
+          "market": "Amravati APMC",
+          "variety": "Local",
+          "raw_records": 274,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 244,
+          "valid_t1_targets": 243,
+          "earliest_feature_date": "2023-07-15",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 203,
+            "val": 2,
+            "test": 39
+          }
+        },
+        {
+          "market": "Junnar APMC (Alephata Sub-yard)",
+          "variety": "Other",
+          "raw_records": 235,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 205,
+          "valid_t1_targets": 204,
+          "earliest_feature_date": "2023-08-18",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 163,
+            "val": 18,
+            "test": 24
+          }
+        },
+        {
+          "market": "Satara APMC",
+          "variety": "Other",
+          "raw_records": 460,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 430,
+          "valid_t1_targets": 429,
+          "earliest_feature_date": "2023-07-16",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 336,
+            "val": 38,
+            "test": 56
+          }
+        },
+        {
+          "market": "Pune APMC (Gultekdi)",
+          "variety": "Local",
+          "raw_records": 503,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 473,
+          "valid_t1_targets": 472,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 375,
+            "val": 41,
+            "test": 57
+          }
+        },
+        {
+          "market": "Kalvan APMC",
+          "variety": "Other",
+          "raw_records": 283,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 253,
+          "valid_t1_targets": 252,
+          "earliest_feature_date": "2023-07-22",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 196,
+            "val": 12,
+            "test": 45
+          }
+        },
+        {
+          "market": "Shrirampur APMC",
+          "variety": "Other",
+          "raw_records": 224,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 194,
+          "valid_t1_targets": 193,
+          "earliest_feature_date": "2023-08-02",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 145,
+            "val": 15,
+            "test": 34
+          }
+        },
+        {
+          "market": "Pandharpur APMC",
+          "variety": "Red",
+          "raw_records": 79,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 49,
+          "valid_t1_targets": 48,
+          "earliest_feature_date": "2023-08-31",
+          "latest_feature_date": "2025-04-24",
+          "split_counts": {
+            "train": 46,
+            "val": 2,
+            "test": 1
+          }
+        },
+        {
+          "market": "Solapur APMC",
+          "variety": "Red",
+          "raw_records": 468,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 438,
+          "valid_t1_targets": 437,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 345,
+            "val": 38,
+            "test": 55
+          }
+        },
+        {
+          "market": "Jamkhed APMC",
+          "variety": "Local",
+          "raw_records": 137,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 107,
+          "valid_t1_targets": 106,
+          "earliest_feature_date": "2023-11-25",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 72,
+            "val": 13,
+            "test": 22
+          }
+        },
+        {
+          "market": "Pune APMC (Khadki Sub-yard)",
+          "variety": "Local",
+          "raw_records": 501,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 471,
+          "valid_t1_targets": 470,
+          "earliest_feature_date": "2023-07-10",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 364,
+            "val": 47,
+            "test": 60
+          }
+        },
+        {
+          "market": "Manmad APMC",
+          "variety": "Other",
+          "raw_records": 338,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 308,
+          "valid_t1_targets": 307,
+          "earliest_feature_date": "2023-07-14",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 235,
+            "val": 22,
+            "test": 51
+          }
+        },
+        {
+          "market": "Bhusaval APMC",
+          "variety": "Red",
+          "raw_records": 292,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 262,
+          "valid_t1_targets": 261,
+          "earliest_feature_date": "2024-01-13",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 217,
+            "val": 35,
+            "test": 10
+          }
+        },
+        {
+          "market": "Pune APMC (Manjri Sub-yard)",
+          "variety": "Local",
+          "raw_records": 574,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 544,
+          "valid_t1_targets": 543,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 429,
+            "val": 50,
+            "test": 65
+          }
+        },
+        {
+          "market": "Pune APMC (Moshi Sub-yard)",
+          "variety": "Local",
+          "raw_records": 521,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 491,
+          "valid_t1_targets": 490,
+          "earliest_feature_date": "2023-07-15",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 387,
+            "val": 44,
+            "test": 60
+          }
+        },
+        {
+          "market": "Dindori(Vani) APMC",
+          "variety": "Other",
+          "raw_records": 160,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 130,
+          "valid_t1_targets": 129,
+          "earliest_feature_date": "2023-07-14",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 88,
+            "val": 9,
+            "test": 33
+          }
+        },
+        {
+          "market": "Ramtek APMC",
+          "variety": "Other",
+          "raw_records": 199,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 169,
+          "valid_t1_targets": 168,
+          "earliest_feature_date": "2023-08-27",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 124,
+            "val": 12,
+            "test": 33
+          }
+        },
+        {
+          "market": "Rahata APMC",
+          "variety": "Other",
+          "raw_records": 214,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 184,
+          "valid_t1_targets": 183,
+          "earliest_feature_date": "2023-08-25",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 138,
+            "val": 20,
+            "test": 26
+          }
+        },
+        {
+          "market": "Nashik APMC",
+          "variety": "Other",
+          "raw_records": 369,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 339,
+          "valid_t1_targets": 338,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 277,
+            "val": 9,
+            "test": 53
+          }
+        },
+        {
+          "market": "Karad APMC",
+          "variety": "Other",
+          "raw_records": 399,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 369,
+          "valid_t1_targets": 368,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 281,
+            "val": 37,
+            "test": 51
+          }
+        },
+        {
+          "market": "Devala APMC",
+          "variety": "Other",
+          "raw_records": 279,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 249,
+          "valid_t1_targets": 248,
+          "earliest_feature_date": "2023-07-21",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 193,
+            "val": 16,
+            "test": 40
+          }
+        },
+        {
+          "market": "Kolhapur APMC",
+          "variety": "Other",
+          "raw_records": 505,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 475,
+          "valid_t1_targets": 474,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 378,
+            "val": 38,
+            "test": 59
+          }
+        },
+        {
+          "market": "Pune APMC (Pimpri Sub-yard)",
+          "variety": "Local",
+          "raw_records": 524,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 494,
+          "valid_t1_targets": 493,
+          "earliest_feature_date": "2023-07-06",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 378,
+            "val": 47,
+            "test": 69
+          }
+        },
+        {
+          "market": "Jalgaon APMC",
+          "variety": "Red",
+          "raw_records": 435,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 405,
+          "valid_t1_targets": 404,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 327,
+            "val": 35,
+            "test": 43
+          }
+        },
+        {
+          "market": "Khed APMC (Chakan Yard)",
+          "variety": "Other",
+          "raw_records": 409,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 379,
+          "valid_t1_targets": 378,
+          "earliest_feature_date": "2023-07-28",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 288,
+            "val": 40,
+            "test": 51
+          }
+        },
+        {
+          "market": "Akola APMC",
+          "variety": "Other",
+          "raw_records": 463,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 433,
+          "valid_t1_targets": 432,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 344,
+            "val": 39,
+            "test": 50
+          }
+        },
+        {
+          "market": "Nandgaon APMC",
+          "variety": "Other",
+          "raw_records": 240,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 210,
+          "valid_t1_targets": 209,
+          "earliest_feature_date": "2023-07-26",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 156,
+            "val": 21,
+            "test": 33
+          }
+        },
+        {
+          "market": "Chandvad APMC",
+          "variety": "Other",
+          "raw_records": 335,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 305,
+          "valid_t1_targets": 304,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 254,
+            "test": 51
+          }
+        },
+        {
+          "market": "Akole APMC",
+          "variety": "Other",
+          "raw_records": 142,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 112,
+          "valid_t1_targets": 111,
+          "earliest_feature_date": "2023-08-20",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 91,
+            "val": 15,
+            "test": 6
+          }
+        },
+        {
+          "market": "Sinner APMC",
+          "variety": "Other",
+          "raw_records": 232,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 202,
+          "valid_t1_targets": 201,
+          "earliest_feature_date": "2023-07-20",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 164,
+            "test": 38
+          }
+        },
+        {
+          "market": "Dindori APMC",
+          "variety": "Other",
+          "raw_records": 119,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 89,
+          "valid_t1_targets": 88,
+          "earliest_feature_date": "2023-07-18",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 41,
+            "test": 48
+          }
+        },
+        {
+          "market": "Lasalgaon(Vinchur) APMC",
+          "variety": "Other",
+          "raw_records": 416,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 386,
+          "valid_t1_targets": 385,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 303,
+            "val": 26,
+            "test": 57
+          }
+        },
+        {
+          "market": "Dhule APMC",
+          "variety": "Red",
+          "raw_records": 369,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 339,
+          "valid_t1_targets": 338,
+          "earliest_feature_date": "2023-07-25",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 261,
+            "val": 34,
+            "test": 44
+          }
+        },
+        {
+          "market": "Pen APMC",
+          "variety": "Red",
+          "raw_records": 85,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 55,
+          "valid_t1_targets": 54,
+          "earliest_feature_date": "2023-10-16",
+          "latest_feature_date": "2024-06-03",
+          "split_counts": {
+            "train": 55
+          }
+        },
+        {
+          "market": "Shrigonda APMC",
+          "variety": "Other",
+          "raw_records": 91,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 61,
+          "valid_t1_targets": 60,
+          "earliest_feature_date": "2024-03-18",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 14,
+            "val": 25,
+            "test": 22
+          }
+        },
+        {
+          "market": "Parner APMC",
+          "variety": "Other",
+          "raw_records": 201,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 171,
+          "valid_t1_targets": 170,
+          "earliest_feature_date": "2023-08-20",
+          "latest_feature_date": "2025-06-08",
+          "split_counts": {
+            "train": 124,
+            "val": 19,
+            "test": 28
+          }
+        },
+        {
+          "market": "Nagpur APMC",
+          "variety": "Red",
+          "raw_records": 355,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 325,
+          "valid_t1_targets": 324,
+          "earliest_feature_date": "2023-08-01",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 249,
+            "val": 27,
+            "test": 49
+          }
+        },
+        {
+          "market": "Yeola APMC",
+          "variety": "Other",
+          "raw_records": 268,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 238,
+          "valid_t1_targets": 237,
+          "earliest_feature_date": "2023-07-21",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 188,
+            "val": 8,
+            "test": 42
+          }
+        },
+        {
+          "market": "Karjat(Raigad) APMC",
+          "variety": "1st Sort",
+          "raw_records": 156,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 126,
+          "valid_t1_targets": 125,
+          "earliest_feature_date": "2023-07-20",
+          "latest_feature_date": "2024-02-23",
+          "split_counts": {
+            "train": 126
+          }
+        },
+        {
+          "market": "Akluj APMC",
+          "variety": "Red",
+          "raw_records": 126,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 96,
+          "valid_t1_targets": 95,
+          "earliest_feature_date": "2023-08-30",
+          "latest_feature_date": "2025-06-08",
+          "split_counts": {
+            "train": 74,
+            "val": 10,
+            "test": 12
+          }
+        },
+        {
+          "market": "Kopargaon APMC",
+          "variety": "Other",
+          "raw_records": 346,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 316,
+          "valid_t1_targets": 315,
+          "earliest_feature_date": "2023-07-22",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 238,
+            "val": 27,
+            "test": 51
+          }
+        },
+        {
+          "market": "Vadgaonpeth APMC",
+          "variety": "Local",
+          "raw_records": 236,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 206,
+          "valid_t1_targets": 205,
+          "earliest_feature_date": "2023-08-16",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 144,
+            "val": 24,
+            "test": 38
+          }
+        },
+        {
+          "market": "Newasa(Ghodegaon) APMC",
+          "variety": "Other",
+          "raw_records": 178,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 148,
+          "valid_t1_targets": 147,
+          "earliest_feature_date": "2023-08-16",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 126,
+            "val": 3,
+            "test": 19
+          }
+        },
+        {
+          "market": "Baramati APMC",
+          "variety": "Red",
+          "raw_records": 204,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 174,
+          "valid_t1_targets": 173,
+          "earliest_feature_date": "2023-08-19",
+          "latest_feature_date": "2025-03-12",
+          "split_counts": {
+            "train": 163,
+            "val": 11
+          }
+        },
+        {
+          "market": "Nagpur APMC",
+          "variety": "White",
+          "raw_records": 350,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 320,
+          "valid_t1_targets": 319,
+          "earliest_feature_date": "2023-08-03",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 245,
+            "val": 26,
+            "test": 49
+          }
+        },
+        {
+          "market": "Rahuri(Vambori) APMC",
+          "variety": "Other",
+          "raw_records": 204,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 174,
+          "valid_t1_targets": 173,
+          "earliest_feature_date": "2023-08-17",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 124,
+            "val": 21,
+            "test": 29
+          }
+        },
+        {
+          "market": "Junnar APMC (Narayangaon Sub-yard)",
+          "variety": "Other",
+          "raw_records": 424,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 394,
+          "valid_t1_targets": 393,
+          "earliest_feature_date": "2023-07-21",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 317,
+            "val": 32,
+            "test": 45
+          }
+        },
+        {
+          "market": "Lonand APMC",
+          "variety": "Other",
+          "raw_records": 76,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 46,
+          "valid_t1_targets": 45,
+          "earliest_feature_date": "2024-05-13",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 20,
+            "val": 12,
+            "test": 14
+          }
+        },
+        {
+          "market": "Kurdwadi(Modnimb) APMC",
+          "variety": "Red",
+          "raw_records": 145,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 115,
+          "valid_t1_targets": 114,
+          "earliest_feature_date": "2023-11-09",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 84,
+            "val": 14,
+            "test": 17
+          }
+        },
+        {
+          "market": "Junnar APMC",
+          "variety": "Other",
+          "raw_records": 124,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 94,
+          "valid_t1_targets": 93,
+          "earliest_feature_date": "2023-10-01",
+          "latest_feature_date": "2025-06-05",
+          "split_counts": {
+            "train": 73,
+            "val": 6,
+            "test": 15
+          }
+        },
+        {
+          "market": "Mankamneshwar Farmar Producer Coltd Sanchalit Mank APMC",
+          "variety": "Other",
+          "raw_records": 107,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 77,
+          "valid_t1_targets": 76,
+          "earliest_feature_date": "2024-04-27",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 34,
+            "test": 43
+          }
+        },
+        {
+          "market": "Kamthi APMC",
+          "variety": "Local",
+          "raw_records": 380,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 350,
+          "valid_t1_targets": 349,
+          "earliest_feature_date": "2023-07-30",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 268,
+            "val": 32,
+            "test": 50
+          }
+        },
+        {
+          "market": "Chandrapur(Ganjwad) APMC",
+          "variety": "Other",
+          "raw_records": 327,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 297,
+          "valid_t1_targets": 296,
+          "earliest_feature_date": "2023-07-25",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 222,
+            "val": 33,
+            "test": 42
+          }
+        },
+        {
+          "market": "Ahmednagar APMC",
+          "variety": "Other",
+          "raw_records": 162,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 132,
+          "valid_t1_targets": 131,
+          "earliest_feature_date": "2023-09-11",
+          "latest_feature_date": "2025-06-07",
+          "split_counts": {
+            "train": 98,
+            "val": 13,
+            "test": 21
+          }
+        },
+        {
+          "market": "Bhusaval APMC",
+          "variety": "Other",
+          "raw_records": 170,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 140,
+          "valid_t1_targets": 139,
+          "earliest_feature_date": "2023-07-23",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 83,
+            "val": 6,
+            "test": 51
+          }
+        },
+        {
+          "market": "Sangli(Phale, Bhajipura Market) APMC",
+          "variety": "Local",
+          "raw_records": 461,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 431,
+          "valid_t1_targets": 430,
+          "earliest_feature_date": "2023-07-20",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 336,
+            "val": 39,
+            "test": 56
+          }
+        },
+        {
+          "market": "Shevgaon APMC",
+          "variety": "1st Sort",
+          "raw_records": 156,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 126,
+          "valid_t1_targets": 125,
+          "earliest_feature_date": "2023-12-21",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 108,
+            "test": 18
+          }
+        },
+        {
+          "market": "Shevgaon APMC",
+          "variety": "Other",
+          "raw_records": 148,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 118,
+          "valid_t1_targets": 117,
+          "earliest_feature_date": "2023-12-21",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 100,
+            "test": 18
+          }
+        },
+        {
+          "market": "Shevgaon APMC",
+          "variety": "2nd Sort",
+          "raw_records": 147,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 117,
+          "valid_t1_targets": 116,
+          "earliest_feature_date": "2023-12-21",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 99,
+            "test": 18
+          }
+        },
+        {
+          "market": "Vai APMC",
+          "variety": "Local",
+          "raw_records": 228,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 198,
+          "valid_t1_targets": 197,
+          "earliest_feature_date": "2023-08-15",
+          "latest_feature_date": "2025-06-08",
+          "split_counts": {
+            "train": 175,
+            "val": 5,
+            "test": 18
+          }
+        },
+        {
+          "market": "Junnar APMC (Otur Sub-yard)",
+          "variety": "Other",
+          "raw_records": 149,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 119,
+          "valid_t1_targets": 118,
+          "earliest_feature_date": "2023-10-01",
+          "latest_feature_date": "2025-06-08",
+          "split_counts": {
+            "train": 99,
+            "val": 7,
+            "test": 13
+          }
+        },
+        {
+          "market": "Nampur APMC",
+          "variety": "Other",
+          "raw_records": 208,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 178,
+          "valid_t1_targets": 177,
+          "earliest_feature_date": "2023-08-02",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 134,
+            "val": 15,
+            "test": 29
+          }
+        },
+        {
+          "market": "Umrane APMC",
+          "variety": "Other",
+          "raw_records": 182,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 152,
+          "valid_t1_targets": 151,
+          "earliest_feature_date": "2023-08-08",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 121,
+            "test": 31
+          }
+        },
+        {
+          "market": "Yawal APMC",
+          "variety": "Red",
+          "raw_records": 116,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 86,
+          "valid_t1_targets": 85,
+          "earliest_feature_date": "2024-02-14",
+          "latest_feature_date": "2025-06-01",
+          "split_counts": {
+            "train": 50,
+            "val": 25,
+            "test": 11
+          }
+        },
+        {
+          "market": "Ahmednagar APMC",
+          "variety": "Red",
+          "raw_records": 70,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 40,
+          "valid_t1_targets": 39,
+          "earliest_feature_date": "2024-02-24",
+          "latest_feature_date": "2025-03-06",
+          "split_counts": {
+            "train": 33,
+            "val": 7
+          }
+        },
+        {
+          "market": "Lasalgaon APMC",
+          "variety": "Red",
+          "raw_records": 360,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 330,
+          "valid_t1_targets": 329,
+          "earliest_feature_date": "2023-11-25",
+          "latest_feature_date": "2025-04-15",
+          "split_counts": {
+            "train": 236,
+            "val": 76,
+            "test": 18
+          }
+        },
+        {
+          "market": "Navapur APMC",
+          "variety": "Other",
+          "raw_records": 65,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 35,
+          "valid_t1_targets": 34,
+          "earliest_feature_date": "2023-12-02",
+          "latest_feature_date": "2025-02-23",
+          "split_counts": {
+            "train": 32,
+            "val": 3
+          }
+        },
+        {
+          "market": "Sakri APMC",
+          "variety": "Red",
+          "raw_records": 242,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 212,
+          "valid_t1_targets": 211,
+          "earliest_feature_date": "2023-09-06",
+          "latest_feature_date": "2025-04-19",
+          "split_counts": {
+            "train": 206,
+            "test": 6
+          }
+        },
+        {
+          "market": "Laxmi Sopan Agriculture Produce Marketing Co Ltd APMC",
+          "variety": "Other",
+          "raw_records": 192,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 162,
+          "valid_t1_targets": 161,
+          "earliest_feature_date": "2023-08-04",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 85,
+            "val": 36,
+            "test": 41
+          }
+        },
+        {
+          "market": "Kada APMC",
+          "variety": "Other",
+          "raw_records": 54,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 24,
+          "valid_t1_targets": 23,
+          "earliest_feature_date": "2024-03-31",
+          "latest_feature_date": "2025-06-08",
+          "split_counts": {
+            "train": 5,
+            "val": 8,
+            "test": 11
+          }
+        },
+        {
+          "market": "Malharshree Farmers Producer Co Ltd APMC",
+          "variety": "Other",
+          "raw_records": 78,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 48,
+          "valid_t1_targets": 47,
+          "earliest_feature_date": "2023-10-27",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 40,
+            "val": 1,
+            "test": 7
+          }
+        },
+        {
+          "market": "Shree Rameshwar Krushi Market APMC",
+          "variety": "Other",
+          "raw_records": 130,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 100,
+          "valid_t1_targets": 99,
+          "earliest_feature_date": "2023-08-24",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 85,
+            "val": 7,
+            "test": 8
+          }
+        },
+        {
+          "market": "Shree Sairaj Krushi Market APMC",
+          "variety": "Local",
+          "raw_records": 86,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 56,
+          "valid_t1_targets": 55,
+          "earliest_feature_date": "2023-11-29",
+          "latest_feature_date": "2025-06-02",
+          "split_counts": {
+            "train": 32,
+            "val": 13,
+            "test": 11
+          }
+        },
+        {
+          "market": "Shivsiddha Govind Producer Company Limited Sanchal APMC",
+          "variety": "Local",
+          "raw_records": 135,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 105,
+          "valid_t1_targets": 104,
+          "earliest_feature_date": "2023-09-06",
+          "latest_feature_date": "2024-10-28",
+          "split_counts": {
+            "train": 105
+          }
+        },
+        {
+          "market": "Om Chaitanya Multistate Agro Purpose Coop Society APMC",
+          "variety": "Other",
+          "raw_records": 147,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 117,
+          "valid_t1_targets": 116,
+          "earliest_feature_date": "2023-10-17",
+          "latest_feature_date": "2025-06-10",
+          "split_counts": {
+            "train": 78,
+            "val": 11,
+            "test": 28
+          }
+        },
+        {
+          "market": "Vita APMC",
+          "variety": "Other",
+          "raw_records": 100,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 70,
+          "valid_t1_targets": 69,
+          "earliest_feature_date": "2024-03-22",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "train": 41,
+            "val": 10,
+            "test": 19
+          }
+        },
+        {
+          "market": "Mangal Wedha APMC",
+          "variety": "Local",
+          "raw_records": 385,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 355,
+          "valid_t1_targets": 354,
+          "earliest_feature_date": "2023-10-02",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 257,
+            "val": 41,
+            "test": 57
+          }
+        },
+        {
+          "market": "Shirpur APMC",
+          "variety": "Red",
+          "raw_records": 113,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 83,
+          "valid_t1_targets": 82,
+          "earliest_feature_date": "2024-01-06",
+          "latest_feature_date": "2025-05-21",
+          "split_counts": {
+            "train": 60,
+            "val": 12,
+            "test": 11
+          }
+        },
+        {
+          "market": "Indapur APMC",
+          "variety": "Red",
+          "raw_records": 48,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 18,
+          "valid_t1_targets": 17,
+          "earliest_feature_date": "2024-09-23",
+          "latest_feature_date": "2025-06-06",
+          "split_counts": {
+            "train": 3,
+            "val": 4,
+            "test": 11
+          }
+        },
+        {
+          "market": "Hingna APMC",
+          "variety": "Other",
+          "raw_records": 31,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 1,
+          "valid_t1_targets": 0,
+          "earliest_feature_date": "2024-04-15",
+          "latest_feature_date": "2024-04-15",
+          "split_counts": {
+            "train": 1
+          }
+        },
+        {
+          "market": "Solapur APMC",
+          "variety": "White",
+          "raw_records": 54,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 24,
+          "valid_t1_targets": 23,
+          "earliest_feature_date": "2023-10-17",
+          "latest_feature_date": "2024-09-30",
+          "split_counts": {
+            "train": 24
+          }
+        },
+        {
+          "market": "Devala APMC",
+          "variety": "Red",
+          "raw_records": 130,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 100,
+          "valid_t1_targets": 99,
+          "earliest_feature_date": "2024-01-03",
+          "latest_feature_date": "2025-03-27",
+          "split_counts": {
+            "train": 71,
+            "val": 29
+          }
+        },
+        {
+          "market": "Lonand APMC",
+          "variety": "Red",
+          "raw_records": 45,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 15,
+          "valid_t1_targets": 14,
+          "earliest_feature_date": "2024-10-03",
+          "latest_feature_date": "2025-05-08",
+          "split_counts": {
+            "train": 14,
+            "test": 1
+          }
+        },
+        {
+          "market": "Karjat APMC",
+          "variety": "1st Sort",
+          "raw_records": 44,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 14,
+          "valid_t1_targets": 13,
+          "earliest_feature_date": "2024-05-03",
+          "latest_feature_date": "2024-06-01",
+          "split_counts": {
+            "train": 14
+          }
+        },
+        {
+          "market": "Shree Rameshwar Krushi Market APMC",
+          "variety": "Red",
+          "raw_records": 44,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 14,
+          "valid_t1_targets": 13,
+          "earliest_feature_date": "2024-11-22",
+          "latest_feature_date": "2025-05-16",
+          "split_counts": {
+            "train": 3,
+            "val": 7,
+            "test": 4
+          }
+        },
+        {
+          "market": "Umrane APMC",
+          "variety": "Red",
+          "raw_records": 108,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 78,
+          "valid_t1_targets": 77,
+          "earliest_feature_date": "2024-01-10",
+          "latest_feature_date": "2025-03-28",
+          "split_counts": {
+            "train": 62,
+            "val": 16
+          }
+        },
+        {
+          "market": "Chandvad APMC",
+          "variety": "Red",
+          "raw_records": 162,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 132,
+          "valid_t1_targets": 131,
+          "earliest_feature_date": "2023-12-26",
+          "latest_feature_date": "2025-04-04",
+          "split_counts": {
+            "train": 97,
+            "val": 34,
+            "test": 1
+          }
+        },
+        {
+          "market": "Kopargaon APMC",
+          "variety": "Red",
+          "raw_records": 144,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 114,
+          "valid_t1_targets": 113,
+          "earliest_feature_date": "2024-01-03",
+          "latest_feature_date": "2025-03-12",
+          "split_counts": {
+            "train": 89,
+            "val": 25
+          }
+        },
+        {
+          "market": "Manmad APMC",
+          "variety": "Red",
+          "raw_records": 197,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 167,
+          "valid_t1_targets": 166,
+          "earliest_feature_date": "2023-12-26",
+          "latest_feature_date": "2025-04-22",
+          "split_counts": {
+            "train": 114,
+            "val": 40,
+            "test": 13
+          }
+        },
+        {
+          "market": "Lasalgaon(Vinchur) APMC",
+          "variety": "Red",
+          "raw_records": 178,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 148,
+          "valid_t1_targets": 147,
+          "earliest_feature_date": "2023-12-19",
+          "latest_feature_date": "2025-04-12",
+          "split_counts": {
+            "train": 105,
+            "val": 33,
+            "test": 10
+          }
+        },
+        {
+          "market": "Kalyan APMC",
+          "variety": "1st Sort",
+          "raw_records": 232,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 202,
+          "valid_t1_targets": 201,
+          "earliest_feature_date": "2024-05-07",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 120,
+            "val": 34,
+            "test": 48
+          }
+        },
+        {
+          "market": "Sangamner APMC",
+          "variety": "Red",
+          "raw_records": 147,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 117,
+          "valid_t1_targets": 116,
+          "earliest_feature_date": "2024-01-04",
+          "latest_feature_date": "2025-05-12",
+          "split_counts": {
+            "train": 101,
+            "val": 15,
+            "test": 1
+          }
+        },
+        {
+          "market": "Pimpalgaon Baswant APMC",
+          "variety": "Pole",
+          "raw_records": 176,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 146,
+          "valid_t1_targets": 145,
+          "earliest_feature_date": "2023-12-26",
+          "latest_feature_date": "2025-04-15",
+          "split_counts": {
+            "train": 96,
+            "val": 39,
+            "test": 11
+          }
+        },
+        {
+          "market": "Nandgaon APMC",
+          "variety": "Red",
+          "raw_records": 114,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 84,
+          "valid_t1_targets": 83,
+          "earliest_feature_date": "2024-01-12",
+          "latest_feature_date": "2025-04-16",
+          "split_counts": {
+            "train": 52,
+            "val": 25,
+            "test": 7
+          }
+        },
+        {
+          "market": "Satana APMC",
+          "variety": "Red",
+          "raw_records": 89,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 59,
+          "valid_t1_targets": 58,
+          "earliest_feature_date": "2024-01-25",
+          "latest_feature_date": "2025-03-25",
+          "split_counts": {
+            "train": 40,
+            "val": 19
+          }
+        },
+        {
+          "market": "Nampur APMC",
+          "variety": "Red",
+          "raw_records": 94,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 64,
+          "valid_t1_targets": 63,
+          "earliest_feature_date": "2024-02-01",
+          "latest_feature_date": "2025-03-28",
+          "split_counts": {
+            "train": 37,
+            "val": 27
+          }
+        },
+        {
+          "market": "Pimpalgaon Baswant(Saykheda) APMC",
+          "variety": "Red",
+          "raw_records": 131,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 101,
+          "valid_t1_targets": 100,
+          "earliest_feature_date": "2024-01-01",
+          "latest_feature_date": "2025-03-18",
+          "split_counts": {
+            "train": 70,
+            "val": 31
+          }
+        },
+        {
+          "market": "Nashik APMC",
+          "variety": "Pole",
+          "raw_records": 160,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 130,
+          "valid_t1_targets": 129,
+          "earliest_feature_date": "2024-01-03",
+          "latest_feature_date": "2025-03-21",
+          "split_counts": {
+            "train": 99,
+            "val": 31
+          }
+        },
+        {
+          "market": "Rahuri(Vambori) APMC",
+          "variety": "Red",
+          "raw_records": 67,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 37,
+          "valid_t1_targets": 36,
+          "earliest_feature_date": "2024-02-08",
+          "latest_feature_date": "2025-03-03",
+          "split_counts": {
+            "train": 35,
+            "val": 2
+          }
+        },
+        {
+          "market": "Yeola APMC",
+          "variety": "Red",
+          "raw_records": 113,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 83,
+          "valid_t1_targets": 82,
+          "earliest_feature_date": "2024-01-17",
+          "latest_feature_date": "2025-03-24",
+          "split_counts": {
+            "train": 55,
+            "val": 28
+          }
+        },
+        {
+          "market": "Sinner APMC",
+          "variety": "Red",
+          "raw_records": 116,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 86,
+          "valid_t1_targets": 85,
+          "earliest_feature_date": "2024-01-23",
+          "latest_feature_date": "2025-03-26",
+          "split_counts": {
+            "train": 60,
+            "val": 26
+          }
+        },
+        {
+          "market": "Dindori(Vani) APMC",
+          "variety": "Red",
+          "raw_records": 83,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 53,
+          "valid_t1_targets": 52,
+          "earliest_feature_date": "2024-01-31",
+          "latest_feature_date": "2025-03-10",
+          "split_counts": {
+            "train": 40,
+            "val": 13
+          }
+        },
+        {
+          "market": "Newasa(Ghodegaon) APMC",
+          "variety": "Red",
+          "raw_records": 63,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 33,
+          "valid_t1_targets": 32,
+          "earliest_feature_date": "2024-02-21",
+          "latest_feature_date": "2025-06-04",
+          "split_counts": {
+            "train": 16,
+            "val": 16,
+            "test": 1
+          }
+        },
+        {
+          "market": "Parner APMC",
+          "variety": "Red",
+          "raw_records": 51,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 21,
+          "valid_t1_targets": 20,
+          "earliest_feature_date": "2024-02-18",
+          "latest_feature_date": "2025-02-07",
+          "split_counts": {
+            "train": 20,
+            "val": 1
+          }
+        },
+        {
+          "market": "Jamkhed APMC",
+          "variety": "Red",
+          "raw_records": 38,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 8,
+          "valid_t1_targets": 7,
+          "earliest_feature_date": "2024-11-07",
+          "latest_feature_date": "2024-12-05",
+          "split_counts": {
+            "train": 8
+          }
+        },
+        {
+          "market": "Kalvan APMC",
+          "variety": "Red",
+          "raw_records": 60,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 30,
+          "valid_t1_targets": 29,
+          "earliest_feature_date": "2024-02-16",
+          "latest_feature_date": "2025-03-04",
+          "split_counts": {
+            "train": 16,
+            "val": 14
+          }
+        },
+        {
+          "market": "Akluj APMC",
+          "variety": "Other",
+          "raw_records": 79,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 49,
+          "valid_t1_targets": 48,
+          "earliest_feature_date": "2024-04-03",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 30,
+            "val": 9,
+            "test": 10
+          }
+        },
+        {
+          "market": "Amravati APMC",
+          "variety": "Red",
+          "raw_records": 220,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 190,
+          "valid_t1_targets": 189,
+          "earliest_feature_date": "2024-03-26",
+          "latest_feature_date": "2025-04-27",
+          "split_counts": {
+            "train": 132,
+            "val": 38,
+            "test": 20
+          }
+        },
+        {
+          "market": "Nandurbar APMC",
+          "variety": "Red",
+          "raw_records": 56,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 26,
+          "valid_t1_targets": 25,
+          "earliest_feature_date": "2024-03-20",
+          "latest_feature_date": "2024-06-05",
+          "split_counts": {
+            "train": 26
+          }
+        },
+        {
+          "market": "Islampur APMC",
+          "variety": "Local",
+          "raw_records": 56,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 26,
+          "valid_t1_targets": 25,
+          "earliest_feature_date": "2024-09-20",
+          "latest_feature_date": "2025-06-06",
+          "split_counts": {
+            "train": 6,
+            "val": 2,
+            "test": 18
+          }
+        },
+        {
+          "market": "Hingna APMC",
+          "variety": "Red",
+          "raw_records": 195,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 165,
+          "valid_t1_targets": 164,
+          "earliest_feature_date": "2024-05-30",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 101,
+            "val": 18,
+            "test": 46
+          }
+        },
+        {
+          "market": "Karjat APMC",
+          "variety": "Local",
+          "raw_records": 148,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 118,
+          "valid_t1_targets": 117,
+          "earliest_feature_date": "2024-09-29",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "train": 44,
+            "val": 40,
+            "test": 34
+          }
+        },
+        {
+          "market": "Hingna APMC",
+          "variety": "White",
+          "raw_records": 41,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 11,
+          "valid_t1_targets": 10,
+          "earliest_feature_date": "2025-04-19",
+          "latest_feature_date": "2025-06-09",
+          "split_counts": {
+            "test": 11
+          }
+        },
+        {
+          "market": "Shirur APMC",
+          "variety": "Other",
+          "raw_records": 36,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 6,
+          "valid_t1_targets": 5,
+          "earliest_feature_date": "2024-11-22",
+          "latest_feature_date": "2024-12-06",
+          "split_counts": {
+            "train": 6
+          }
+        },
+        {
+          "market": "Shivsiddha Govind Producer Company Limited Sanchal APMC",
+          "variety": "Other",
+          "raw_records": 59,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 29,
+          "valid_t1_targets": 28,
+          "earliest_feature_date": "2025-04-19",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "test": 29
+          }
+        },
+        {
+          "market": "Kalyan APMC",
+          "variety": "2nd Sort",
+          "raw_records": 39,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 9,
+          "valid_t1_targets": 8,
+          "earliest_feature_date": "2025-05-22",
+          "latest_feature_date": "2025-06-11",
+          "split_counts": {
+            "test": 9
+          }
+        }
+      ]
+    },
+    {
+      "commodity": "Wheat (Sharbati)",
+      "crop_tier": "TIER_2",
+      "output_file": "data\\processed\\ml\\features\\wheat_features.csv",
+      "file_size_bytes": 2278128,
+      "sha256": "c1a14aa944076c7ef83e86ed0180174fb8e149b74acbf758abff34aec5ef6977",
+      "total_series_processed": 88,
+      "total_feature_rows": 5825,
+      "split_distribution": {
+        "train": 5825
+      },
+      "benchmark_market_used": "Lasalgaon APMC",
+      "series_diagnostics": [
+        {
+          "market": "Lasalgaon APMC",
+          "variety": "Maharashtra 2189",
+          "raw_records": 303,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 273,
+          "valid_t1_targets": 272,
+          "earliest_feature_date": "2023-06-24",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 273
+          }
+        },
+        {
+          "market": "Lasalgaon(Vinchur) APMC",
+          "variety": "Other",
+          "raw_records": 78,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 48,
+          "valid_t1_targets": 47,
+          "earliest_feature_date": "2023-09-30",
+          "latest_feature_date": "2024-02-05",
+          "split_counts": {
+            "train": 48
+          }
+        },
+        {
+          "market": "Shrirampur APMC",
+          "variety": "Other",
+          "raw_records": 101,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 71,
+          "valid_t1_targets": 70,
+          "earliest_feature_date": "2023-08-02",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 71
+          }
+        },
+        {
+          "market": "Malegaon APMC",
+          "variety": "Other",
+          "raw_records": 129,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 99,
+          "valid_t1_targets": 98,
+          "earliest_feature_date": "2023-07-27",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 99
+          }
+        },
+        {
+          "market": "Nandgaon APMC",
+          "variety": "Maharashtra 2189",
+          "raw_records": 122,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 92,
+          "valid_t1_targets": 91,
+          "earliest_feature_date": "2023-07-19",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 92
+          }
+        },
+        {
+          "market": "Sangli APMC",
+          "variety": "Other",
+          "raw_records": 116,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 86,
+          "valid_t1_targets": 85,
+          "earliest_feature_date": "2023-07-15",
+          "latest_feature_date": "2024-02-02",
+          "split_counts": {
+            "train": 86
+          }
+        },
+        {
+          "market": "Yawal APMC",
+          "variety": "Other",
+          "raw_records": 40,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 10,
+          "valid_t1_targets": 9,
+          "earliest_feature_date": "2023-09-23",
+          "latest_feature_date": "2024-02-02",
+          "split_counts": {
+            "train": 10
+          }
+        },
+        {
+          "market": "Solapur APMC",
+          "variety": "Sharbati",
+          "raw_records": 185,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 155,
+          "valid_t1_targets": 154,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 155
+          }
+        },
+        {
+          "market": "Nanded APMC",
+          "variety": "Sharbati",
+          "raw_records": 68,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 38,
+          "valid_t1_targets": 37,
+          "earliest_feature_date": "2023-08-03",
+          "latest_feature_date": "2024-02-03",
+          "split_counts": {
+            "train": 38
+          }
+        },
+        {
+          "market": "Chandur Bazar APMC",
+          "variety": "Other",
+          "raw_records": 106,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 76,
+          "valid_t1_targets": 75,
+          "earliest_feature_date": "2023-08-22",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 76
+          }
+        },
+        {
+          "market": "Pune APMC (Gultekdi)",
+          "variety": "Sharbati",
+          "raw_records": 148,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 118,
+          "valid_t1_targets": 117,
+          "earliest_feature_date": "2023-07-11",
+          "latest_feature_date": "2023-12-04",
+          "split_counts": {
+            "train": 118
+          }
+        },
+        {
+          "market": "Parola APMC",
+          "variety": "Kalyan",
+          "raw_records": 45,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 15,
+          "valid_t1_targets": 14,
+          "earliest_feature_date": "2023-09-22",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 15
+          }
+        },
+        {
+          "market": "Amarawati APMC",
+          "variety": "Other",
+          "raw_records": 163,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 133,
+          "valid_t1_targets": 132,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2024-02-02",
+          "split_counts": {
+            "train": 133
+          }
+        },
+        {
+          "market": "Akola APMC",
+          "variety": "Other",
+          "raw_records": 182,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 152,
+          "valid_t1_targets": 151,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 152
+          }
+        },
+        {
+          "market": "Barshi APMC",
+          "variety": "Other",
+          "raw_records": 95,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 65,
+          "valid_t1_targets": 64,
+          "earliest_feature_date": "2023-08-07",
+          "latest_feature_date": "2024-02-05",
+          "split_counts": {
+            "train": 65
+          }
+        },
+        {
+          "market": "Hingoli APMC",
+          "variety": "Sharbati",
+          "raw_records": 72,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 42,
+          "valid_t1_targets": 41,
+          "earliest_feature_date": "2023-08-31",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 42
+          }
+        },
+        {
+          "market": "Hinganghat APMC",
+          "variety": "Other",
+          "raw_records": 143,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 113,
+          "valid_t1_targets": 112,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 113
+          }
+        },
+        {
+          "market": "Karjat(Raigad) APMC",
+          "variety": "Other",
+          "raw_records": 182,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 152,
+          "valid_t1_targets": 151,
+          "earliest_feature_date": "2023-07-07",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 152
+          }
+        },
+        {
+          "market": "Rahuri APMC",
+          "variety": "Other",
+          "raw_records": 110,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 80,
+          "valid_t1_targets": 79,
+          "earliest_feature_date": "2023-07-11",
+          "latest_feature_date": "2024-02-02",
+          "split_counts": {
+            "train": 80
+          }
+        },
+        {
+          "market": "Shevgaon APMC",
+          "variety": "Maharashtra 2189",
+          "raw_records": 179,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 149,
+          "valid_t1_targets": 148,
+          "earliest_feature_date": "2023-07-14",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 149
+          }
+        },
+        {
+          "market": "Rahuri(Vambori) APMC",
+          "variety": "Other",
+          "raw_records": 141,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 111,
+          "valid_t1_targets": 110,
+          "earliest_feature_date": "2023-08-01",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 111
+          }
+        },
+        {
+          "market": "Dondaicha APMC",
+          "variety": "Other",
+          "raw_records": 151,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 121,
+          "valid_t1_targets": 120,
+          "earliest_feature_date": "2023-07-20",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 121
+          }
+        },
+        {
+          "market": "Jamkhed APMC",
+          "variety": "Other",
+          "raw_records": 102,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 72,
+          "valid_t1_targets": 71,
+          "earliest_feature_date": "2023-07-25",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 72
+          }
+        },
+        {
+          "market": "Jamkhed APMC",
+          "variety": "Maharashtra 2189",
+          "raw_records": 64,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 34,
+          "valid_t1_targets": 33,
+          "earliest_feature_date": "2023-09-22",
+          "latest_feature_date": "2024-02-02",
+          "split_counts": {
+            "train": 34
+          }
+        },
+        {
+          "market": "Barshi(Vairag) APMC",
+          "variety": "Other",
+          "raw_records": 49,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 19,
+          "valid_t1_targets": 18,
+          "earliest_feature_date": "2023-08-14",
+          "latest_feature_date": "2024-02-05",
+          "split_counts": {
+            "train": 19
+          }
+        },
+        {
+          "market": "Parbhani APMC",
+          "variety": "Other",
+          "raw_records": 83,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 53,
+          "valid_t1_targets": 52,
+          "earliest_feature_date": "2023-07-28",
+          "latest_feature_date": "2024-01-19",
+          "split_counts": {
+            "train": 53
+          }
+        },
+        {
+          "market": "Karmala APMC",
+          "variety": "Other",
+          "raw_records": 82,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 52,
+          "valid_t1_targets": 51,
+          "earliest_feature_date": "2023-08-21",
+          "latest_feature_date": "2024-02-05",
+          "split_counts": {
+            "train": 52
+          }
+        },
+        {
+          "market": "Majalgaon APMC",
+          "variety": "Other",
+          "raw_records": 126,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 96,
+          "valid_t1_targets": 95,
+          "earliest_feature_date": "2023-07-15",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 96
+          }
+        },
+        {
+          "market": "Rahata APMC",
+          "variety": "Other",
+          "raw_records": 187,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 157,
+          "valid_t1_targets": 156,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 157
+          }
+        },
+        {
+          "market": "Nagpur APMC",
+          "variety": "Other",
+          "raw_records": 160,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 130,
+          "valid_t1_targets": 129,
+          "earliest_feature_date": "2023-07-20",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 130
+          }
+        },
+        {
+          "market": "Gangakhed APMC",
+          "variety": "Other",
+          "raw_records": 33,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 3,
+          "valid_t1_targets": 2,
+          "earliest_feature_date": "2024-02-03",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 3
+          }
+        },
+        {
+          "market": "Ulhasnagar APMC",
+          "variety": "Other",
+          "raw_records": 158,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 128,
+          "valid_t1_targets": 127,
+          "earliest_feature_date": "2023-07-17",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 128
+          }
+        },
+        {
+          "market": "Raver APMC",
+          "variety": "Other",
+          "raw_records": 93,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 63,
+          "valid_t1_targets": 62,
+          "earliest_feature_date": "2023-08-02",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 63
+          }
+        },
+        {
+          "market": "Satana APMC",
+          "variety": "Other",
+          "raw_records": 109,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 79,
+          "valid_t1_targets": 78,
+          "earliest_feature_date": "2023-07-26",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 79
+          }
+        },
+        {
+          "market": "Shirpur APMC",
+          "variety": "Other",
+          "raw_records": 116,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 86,
+          "valid_t1_targets": 85,
+          "earliest_feature_date": "2023-07-20",
+          "latest_feature_date": "2024-02-02",
+          "split_counts": {
+            "train": 86
+          }
+        },
+        {
+          "market": "Nagpur APMC",
+          "variety": "Sharbati",
+          "raw_records": 156,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 126,
+          "valid_t1_targets": 125,
+          "earliest_feature_date": "2023-07-22",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 126
+          }
+        },
+        {
+          "market": "Chopada APMC",
+          "variety": "Other",
+          "raw_records": 74,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 44,
+          "valid_t1_targets": 43,
+          "earliest_feature_date": "2023-09-21",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 44
+          }
+        },
+        {
+          "market": "Dhamngaon-Railway APMC",
+          "variety": "Other",
+          "raw_records": 51,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 21,
+          "valid_t1_targets": 20,
+          "earliest_feature_date": "2023-07-24",
+          "latest_feature_date": "2024-01-11",
+          "split_counts": {
+            "train": 21
+          }
+        },
+        {
+          "market": "Shevgaon(Bodhegaon) APMC",
+          "variety": "Maharashtra 2189",
+          "raw_records": 158,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 128,
+          "valid_t1_targets": 127,
+          "earliest_feature_date": "2023-07-18",
+          "latest_feature_date": "2024-02-02",
+          "split_counts": {
+            "train": 128
+          }
+        },
+        {
+          "market": "Shahada APMC",
+          "variety": "Other",
+          "raw_records": 119,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 89,
+          "valid_t1_targets": 88,
+          "earliest_feature_date": "2023-07-31",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 89
+          }
+        },
+        {
+          "market": "Kille Dharur APMC",
+          "variety": "Other",
+          "raw_records": 48,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 18,
+          "valid_t1_targets": 17,
+          "earliest_feature_date": "2023-10-16",
+          "latest_feature_date": "2024-02-03",
+          "split_counts": {
+            "train": 18
+          }
+        },
+        {
+          "market": "Tasgaon APMC",
+          "variety": "Other",
+          "raw_records": 83,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 53,
+          "valid_t1_targets": 52,
+          "earliest_feature_date": "2023-09-01",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 53
+          }
+        },
+        {
+          "market": "Savner APMC",
+          "variety": "Other",
+          "raw_records": 112,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 82,
+          "valid_t1_targets": 81,
+          "earliest_feature_date": "2023-07-29",
+          "latest_feature_date": "2024-02-01",
+          "split_counts": {
+            "train": 82
+          }
+        },
+        {
+          "market": "Wardha APMC",
+          "variety": "Other",
+          "raw_records": 94,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 64,
+          "valid_t1_targets": 63,
+          "earliest_feature_date": "2023-07-24",
+          "latest_feature_date": "2024-02-05",
+          "split_counts": {
+            "train": 64
+          }
+        },
+        {
+          "market": "Nandurbar APMC",
+          "variety": "Other",
+          "raw_records": 104,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 74,
+          "valid_t1_targets": 73,
+          "earliest_feature_date": "2023-07-27",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 74
+          }
+        },
+        {
+          "market": "Palghar APMC",
+          "variety": "Other",
+          "raw_records": 100,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 70,
+          "valid_t1_targets": 69,
+          "earliest_feature_date": "2023-08-31",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 70
+          }
+        },
+        {
+          "market": "Bhokar APMC",
+          "variety": "Other",
+          "raw_records": 46,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 16,
+          "valid_t1_targets": 15,
+          "earliest_feature_date": "2023-09-11",
+          "latest_feature_date": "2023-12-22",
+          "split_counts": {
+            "train": 16
+          }
+        },
+        {
+          "market": "Gevrai APMC",
+          "variety": "Other",
+          "raw_records": 158,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 128,
+          "valid_t1_targets": 127,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 128
+          }
+        },
+        {
+          "market": "Mumbai APMC",
+          "variety": "Other",
+          "raw_records": 132,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 102,
+          "valid_t1_targets": 101,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2023-12-04",
+          "split_counts": {
+            "train": 102
+          }
+        },
+        {
+          "market": "Katol APMC",
+          "variety": "Other",
+          "raw_records": 153,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 123,
+          "valid_t1_targets": 122,
+          "earliest_feature_date": "2023-07-14",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 123
+          }
+        },
+        {
+          "market": "Amarawati APMC",
+          "variety": "147 Average",
+          "raw_records": 116,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 86,
+          "valid_t1_targets": 85,
+          "earliest_feature_date": "2023-08-18",
+          "latest_feature_date": "2023-12-30",
+          "split_counts": {
+            "train": 86
+          }
+        },
+        {
+          "market": "Ahmednagar APMC",
+          "variety": "Other",
+          "raw_records": 83,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 53,
+          "valid_t1_targets": 52,
+          "earliest_feature_date": "2023-07-31",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 53
+          }
+        },
+        {
+          "market": "Amalner APMC",
+          "variety": "Other",
+          "raw_records": 175,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 145,
+          "valid_t1_targets": 144,
+          "earliest_feature_date": "2023-07-15",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 145
+          }
+        },
+        {
+          "market": "Achalpur APMC",
+          "variety": "Other",
+          "raw_records": 81,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 51,
+          "valid_t1_targets": 50,
+          "earliest_feature_date": "2023-09-09",
+          "latest_feature_date": "2024-02-02",
+          "split_counts": {
+            "train": 51
+          }
+        },
+        {
+          "market": "Anajngaon APMC",
+          "variety": "Other",
+          "raw_records": 57,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 27,
+          "valid_t1_targets": 26,
+          "earliest_feature_date": "2023-10-07",
+          "latest_feature_date": "2024-02-03",
+          "split_counts": {
+            "train": 27
+          }
+        },
+        {
+          "market": "Beed APMC",
+          "variety": "Other",
+          "raw_records": 77,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 47,
+          "valid_t1_targets": 46,
+          "earliest_feature_date": "2023-08-14",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 47
+          }
+        },
+        {
+          "market": "Manmad APMC",
+          "variety": "Other",
+          "raw_records": 49,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 19,
+          "valid_t1_targets": 18,
+          "earliest_feature_date": "2023-09-15",
+          "latest_feature_date": "2024-02-05",
+          "split_counts": {
+            "train": 19
+          }
+        },
+        {
+          "market": "Kaij APMC",
+          "variety": "Other",
+          "raw_records": 40,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 10,
+          "valid_t1_targets": 9,
+          "earliest_feature_date": "2023-08-31",
+          "latest_feature_date": "2023-12-13",
+          "split_counts": {
+            "train": 10
+          }
+        },
+        {
+          "market": "Murtizapur APMC",
+          "variety": "Other",
+          "raw_records": 59,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 29,
+          "valid_t1_targets": 28,
+          "earliest_feature_date": "2023-09-20",
+          "latest_feature_date": "2024-02-01",
+          "split_counts": {
+            "train": 29
+          }
+        },
+        {
+          "market": "Pathardi APMC",
+          "variety": "Maharashtra 2189",
+          "raw_records": 58,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 28,
+          "valid_t1_targets": 27,
+          "earliest_feature_date": "2023-10-13",
+          "latest_feature_date": "2024-02-03",
+          "split_counts": {
+            "train": 28
+          }
+        },
+        {
+          "market": "Shrirampur(Belapur) APMC",
+          "variety": "Other",
+          "raw_records": 90,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 60,
+          "valid_t1_targets": 59,
+          "earliest_feature_date": "2023-07-18",
+          "latest_feature_date": "2024-01-20",
+          "split_counts": {
+            "train": 60
+          }
+        },
+        {
+          "market": "Tumsar APMC",
+          "variety": "Other",
+          "raw_records": 64,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 34,
+          "valid_t1_targets": 33,
+          "earliest_feature_date": "2023-07-20",
+          "latest_feature_date": "2024-01-06",
+          "split_counts": {
+            "train": 34
+          }
+        },
+        {
+          "market": "Sindi(Selu) APMC",
+          "variety": "Other",
+          "raw_records": 84,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 54,
+          "valid_t1_targets": 53,
+          "earliest_feature_date": "2023-08-10",
+          "latest_feature_date": "2024-02-05",
+          "split_counts": {
+            "train": 54
+          }
+        },
+        {
+          "market": "Yeola APMC",
+          "variety": "Maharashtra 2189",
+          "raw_records": 83,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 53,
+          "valid_t1_targets": 52,
+          "earliest_feature_date": "2023-08-19",
+          "latest_feature_date": "2024-02-05",
+          "split_counts": {
+            "train": 53
+          }
+        },
+        {
+          "market": "Vasai APMC",
+          "variety": "Other",
+          "raw_records": 50,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 20,
+          "valid_t1_targets": 19,
+          "earliest_feature_date": "2023-09-27",
+          "latest_feature_date": "2024-02-03",
+          "split_counts": {
+            "train": 20
+          }
+        },
+        {
+          "market": "Loha APMC",
+          "variety": "Other",
+          "raw_records": 68,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 38,
+          "valid_t1_targets": 37,
+          "earliest_feature_date": "2023-08-10",
+          "latest_feature_date": "2024-02-03",
+          "split_counts": {
+            "train": 38
+          }
+        },
+        {
+          "market": "Kopargaon APMC",
+          "variety": "Other",
+          "raw_records": 183,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 153,
+          "valid_t1_targets": 152,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 153
+          }
+        },
+        {
+          "market": "Dhule APMC",
+          "variety": "Other",
+          "raw_records": 160,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 130,
+          "valid_t1_targets": 129,
+          "earliest_feature_date": "2023-07-15",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 130
+          }
+        },
+        {
+          "market": "Daund APMC",
+          "variety": "Maharashtra 2189",
+          "raw_records": 63,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 33,
+          "valid_t1_targets": 32,
+          "earliest_feature_date": "2023-09-24",
+          "latest_feature_date": "2024-02-04",
+          "split_counts": {
+            "train": 33
+          }
+        },
+        {
+          "market": "Morshi APMC",
+          "variety": "Other",
+          "raw_records": 62,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 32,
+          "valid_t1_targets": 31,
+          "earliest_feature_date": "2023-10-09",
+          "latest_feature_date": "2024-02-05",
+          "split_counts": {
+            "train": 32
+          }
+        },
+        {
+          "market": "Mangal Wedha APMC",
+          "variety": "Other",
+          "raw_records": 45,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 15,
+          "valid_t1_targets": 14,
+          "earliest_feature_date": "2023-11-02",
+          "latest_feature_date": "2024-02-01",
+          "split_counts": {
+            "train": 15
+          }
+        },
+        {
+          "market": "Baramati APMC",
+          "variety": "Kalyan",
+          "raw_records": 53,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 23,
+          "valid_t1_targets": 22,
+          "earliest_feature_date": "2023-10-26",
+          "latest_feature_date": "2024-02-05",
+          "split_counts": {
+            "train": 23
+          }
+        },
+        {
+          "market": "Umared APMC",
+          "variety": "Other",
+          "raw_records": 60,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 30,
+          "valid_t1_targets": 29,
+          "earliest_feature_date": "2023-10-19",
+          "latest_feature_date": "2024-02-03",
+          "split_counts": {
+            "train": 30
+          }
+        },
+        {
+          "market": "Navapur APMC",
+          "variety": "Other",
+          "raw_records": 37,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 7,
+          "valid_t1_targets": 6,
+          "earliest_feature_date": "2023-12-19",
+          "latest_feature_date": "2024-01-29",
+          "split_counts": {
+            "train": 7
+          }
+        },
+        {
+          "market": "Kurdwadi(Modnimb) APMC",
+          "variety": "Other",
+          "raw_records": 40,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 10,
+          "valid_t1_targets": 9,
+          "earliest_feature_date": "2023-12-21",
+          "latest_feature_date": "2024-02-05",
+          "split_counts": {
+            "train": 10
+          }
+        },
+        {
+          "market": "Baramati APMC",
+          "variety": "Maharashtra 2189",
+          "raw_records": 53,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 23,
+          "valid_t1_targets": 22,
+          "earliest_feature_date": "2023-10-26",
+          "latest_feature_date": "2024-02-05",
+          "split_counts": {
+            "train": 23
+          }
+        },
+        {
+          "market": "Kalvan APMC",
+          "variety": "Other",
+          "raw_records": 38,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 8,
+          "valid_t1_targets": 7,
+          "earliest_feature_date": "2023-12-11",
+          "latest_feature_date": "2024-02-01",
+          "split_counts": {
+            "train": 8
+          }
+        },
+        {
+          "market": "Ausa APMC",
+          "variety": "Maharashtra 2189",
+          "raw_records": 31,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 1,
+          "valid_t1_targets": 0,
+          "earliest_feature_date": "2023-10-22",
+          "latest_feature_date": "2023-10-22",
+          "split_counts": {
+            "train": 1
+          }
+        },
+        {
+          "market": "Pathari APMC",
+          "variety": "Other",
+          "raw_records": 51,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 21,
+          "valid_t1_targets": 20,
+          "earliest_feature_date": "2023-10-20",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 21
+          }
+        },
+        {
+          "market": "Pachora APMC",
+          "variety": "Other",
+          "raw_records": 91,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 61,
+          "valid_t1_targets": 60,
+          "earliest_feature_date": "2023-08-02",
+          "latest_feature_date": "2024-02-06",
+          "split_counts": {
+            "train": 61
+          }
+        },
+        {
+          "market": "Kada APMC",
+          "variety": "Maharashtra 2189",
+          "raw_records": 64,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 34,
+          "valid_t1_targets": 33,
+          "earliest_feature_date": "2023-09-21",
+          "latest_feature_date": "2024-02-03",
+          "split_counts": {
+            "train": 34
+          }
+        },
+        {
+          "market": "Vaduj APMC",
+          "variety": "Maharashtra 2189",
+          "raw_records": 33,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 3,
+          "valid_t1_targets": 2,
+          "earliest_feature_date": "2024-01-13",
+          "latest_feature_date": "2024-02-03",
+          "split_counts": {
+            "train": 3
+          }
+        },
+        {
+          "market": "Telhara APMC",
+          "variety": "Other",
+          "raw_records": 67,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 37,
+          "valid_t1_targets": 36,
+          "earliest_feature_date": "2023-10-05",
+          "latest_feature_date": "2024-02-01",
+          "split_counts": {
+            "train": 37
+          }
+        },
+        {
+          "market": "Dondaicha(Sindhkheda) APMC",
+          "variety": "Other",
+          "raw_records": 31,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 1,
+          "valid_t1_targets": 0,
+          "earliest_feature_date": "2023-12-06",
+          "latest_feature_date": "2023-12-06",
+          "split_counts": {
+            "train": 1
+          }
+        },
+        {
+          "market": "Chalisgaon APMC",
+          "variety": "Other",
+          "raw_records": 110,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 80,
+          "valid_t1_targets": 79,
+          "earliest_feature_date": "2023-08-11",
+          "latest_feature_date": "2024-02-05",
+          "split_counts": {
+            "train": 80
+          }
+        },
+        {
+          "market": "Sinner APMC",
+          "variety": "Other",
+          "raw_records": 36,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 6,
+          "valid_t1_targets": 5,
+          "earliest_feature_date": "2023-10-18",
+          "latest_feature_date": "2024-01-09",
+          "split_counts": {
+            "train": 6
+          }
+        },
+        {
+          "market": "Shrigonda APMC",
+          "variety": "Other",
+          "raw_records": 37,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 7,
+          "valid_t1_targets": 6,
+          "earliest_feature_date": "2023-12-27",
+          "latest_feature_date": "2024-02-01",
+          "split_counts": {
+            "train": 7
+          }
+        },
+        {
+          "market": "Om Chaitanya Multistate Agro Purpose Coop Society APMC",
+          "variety": "Other",
+          "raw_records": 77,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 47,
+          "valid_t1_targets": 46,
+          "earliest_feature_date": "2023-08-25",
+          "latest_feature_date": "2023-11-29",
+          "split_counts": {
+            "train": 47
+          }
+        }
+      ]
+    },
+    {
+      "commodity": "Tomato (Hybrid)",
+      "crop_tier": "TIER_2",
+      "output_file": "data\\processed\\ml\\features\\tomato_features.csv",
+      "file_size_bytes": 256634,
+      "sha256": "1137442c4ced9d827adb583130de129710c2b9683648f86b3905f06d60278256",
+      "total_series_processed": 35,
+      "total_feature_rows": 690,
+      "split_distribution": {
+        "train": 690
+      },
+      "benchmark_market_used": "Pimpalgaon Baswant APMC",
+      "series_diagnostics": [
+        {
+          "market": "Kolhapur APMC",
+          "variety": "Other",
+          "raw_records": 52,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 22,
+          "valid_t1_targets": 21,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 22
+          }
+        },
+        {
+          "market": "Khed APMC (Chakan Yard)",
+          "variety": "Other",
+          "raw_records": 48,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 18,
+          "valid_t1_targets": 17,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2023-08-05",
+          "split_counts": {
+            "train": 18
+          }
+        },
+        {
+          "market": "Vai APMC",
+          "variety": "Local",
+          "raw_records": 52,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 22,
+          "valid_t1_targets": 21,
+          "earliest_feature_date": "2023-07-15",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 22
+          }
+        },
+        {
+          "market": "Panvel APMC",
+          "variety": "Other",
+          "raw_records": 47,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 17,
+          "valid_t1_targets": 16,
+          "earliest_feature_date": "2023-07-14",
+          "latest_feature_date": "2023-08-04",
+          "split_counts": {
+            "train": 17
+          }
+        },
+        {
+          "market": "Pimpalgaon Baswant APMC",
+          "variety": "Other",
+          "raw_records": 50,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 20,
+          "valid_t1_targets": 19,
+          "earliest_feature_date": "2023-07-18",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 20
+          }
+        },
+        {
+          "market": "Phaltan APMC",
+          "variety": "Other",
+          "raw_records": 48,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 18,
+          "valid_t1_targets": 17,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 18
+          }
+        },
+        {
+          "market": "Pune APMC (Khadki Sub-yard)",
+          "variety": "Local",
+          "raw_records": 41,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 11,
+          "valid_t1_targets": 10,
+          "earliest_feature_date": "2023-07-08",
+          "latest_feature_date": "2023-08-03",
+          "split_counts": {
+            "train": 11
+          }
+        },
+        {
+          "market": "Sangamner APMC",
+          "variety": "Other",
+          "raw_records": 56,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 26,
+          "valid_t1_targets": 25,
+          "earliest_feature_date": "2023-07-10",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 26
+          }
+        },
+        {
+          "market": "Mumbai APMC",
+          "variety": "Other",
+          "raw_records": 51,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 21,
+          "valid_t1_targets": 20,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2023-08-05",
+          "split_counts": {
+            "train": 21
+          }
+        },
+        {
+          "market": "Satara APMC",
+          "variety": "Other",
+          "raw_records": 49,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 19,
+          "valid_t1_targets": 18,
+          "earliest_feature_date": "2023-07-15",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 19
+          }
+        },
+        {
+          "market": "Islampur APMC",
+          "variety": "Other",
+          "raw_records": 34,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 4,
+          "valid_t1_targets": 3,
+          "earliest_feature_date": "2023-07-28",
+          "latest_feature_date": "2023-08-03",
+          "split_counts": {
+            "train": 4
+          }
+        },
+        {
+          "market": "Karad APMC",
+          "variety": "Other",
+          "raw_records": 53,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 23,
+          "valid_t1_targets": 22,
+          "earliest_feature_date": "2023-07-11",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 23
+          }
+        },
+        {
+          "market": "Amravati APMC",
+          "variety": "Local",
+          "raw_records": 116,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 86,
+          "valid_t1_targets": 85,
+          "earliest_feature_date": "2023-07-15",
+          "latest_feature_date": "2023-11-06",
+          "split_counts": {
+            "train": 86
+          }
+        },
+        {
+          "market": "Junnar APMC (Narayangaon Sub-yard)",
+          "variety": "Local",
+          "raw_records": 58,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 28,
+          "valid_t1_targets": 27,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2023-11-03",
+          "split_counts": {
+            "train": 28
+          }
+        },
+        {
+          "market": "Jalgaon APMC",
+          "variety": "Other",
+          "raw_records": 53,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 23,
+          "valid_t1_targets": 22,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2023-10-16",
+          "split_counts": {
+            "train": 23
+          }
+        },
+        {
+          "market": "Bhusaval APMC",
+          "variety": "Other",
+          "raw_records": 45,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 15,
+          "valid_t1_targets": 14,
+          "earliest_feature_date": "2023-07-30",
+          "latest_feature_date": "2023-10-31",
+          "split_counts": {
+            "train": 15
+          }
+        },
+        {
+          "market": "Solapur APMC",
+          "variety": "Other",
+          "raw_records": 50,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 20,
+          "valid_t1_targets": 19,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2023-08-05",
+          "split_counts": {
+            "train": 20
+          }
+        },
+        {
+          "market": "Nagpur APMC",
+          "variety": "Local",
+          "raw_records": 43,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 13,
+          "valid_t1_targets": 12,
+          "earliest_feature_date": "2023-07-20",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 13
+          }
+        },
+        {
+          "market": "Kalmeshwar APMC",
+          "variety": "Other",
+          "raw_records": 60,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 30,
+          "valid_t1_targets": 29,
+          "earliest_feature_date": "2023-07-11",
+          "latest_feature_date": "2023-10-07",
+          "split_counts": {
+            "train": 30
+          }
+        },
+        {
+          "market": "Navapur APMC",
+          "variety": "Other",
+          "raw_records": 49,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 19,
+          "valid_t1_targets": 18,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 19
+          }
+        },
+        {
+          "market": "Ramtek APMC",
+          "variety": "Other",
+          "raw_records": 44,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 14,
+          "valid_t1_targets": 13,
+          "earliest_feature_date": "2023-07-18",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 14
+          }
+        },
+        {
+          "market": "Pune APMC (Moshi Sub-yard)",
+          "variety": "Local",
+          "raw_records": 52,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 22,
+          "valid_t1_targets": 21,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 22
+          }
+        },
+        {
+          "market": "Kamthi APMC",
+          "variety": "Local",
+          "raw_records": 65,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 35,
+          "valid_t1_targets": 34,
+          "earliest_feature_date": "2023-07-06",
+          "latest_feature_date": "2023-09-24",
+          "split_counts": {
+            "train": 35
+          }
+        },
+        {
+          "market": "Pune APMC (Gultekdi)",
+          "variety": "Local",
+          "raw_records": 51,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 21,
+          "valid_t1_targets": 20,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 21
+          }
+        },
+        {
+          "market": "Pune APMC (Manjri Sub-yard)",
+          "variety": "Other",
+          "raw_records": 55,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 25,
+          "valid_t1_targets": 24,
+          "earliest_feature_date": "2023-07-10",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 25
+          }
+        },
+        {
+          "market": "Rahata APMC",
+          "variety": "Other",
+          "raw_records": 52,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 22,
+          "valid_t1_targets": 21,
+          "earliest_feature_date": "2023-07-13",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 22
+          }
+        },
+        {
+          "market": "Chandvad APMC",
+          "variety": "Local",
+          "raw_records": 45,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 15,
+          "valid_t1_targets": 14,
+          "earliest_feature_date": "2023-07-26",
+          "latest_feature_date": "2023-10-05",
+          "split_counts": {
+            "train": 15
+          }
+        },
+        {
+          "market": "Ratnagiri (Nachane) APMC",
+          "variety": "Other",
+          "raw_records": 35,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 5,
+          "valid_t1_targets": 4,
+          "earliest_feature_date": "2023-07-31",
+          "latest_feature_date": "2023-08-04",
+          "split_counts": {
+            "train": 5
+          }
+        },
+        {
+          "market": "Vadgaonpeth APMC",
+          "variety": "Local",
+          "raw_records": 35,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 5,
+          "valid_t1_targets": 4,
+          "earliest_feature_date": "2023-08-01",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 5
+          }
+        },
+        {
+          "market": "Chandrapur(Ganjwad) APMC",
+          "variety": "Other",
+          "raw_records": 39,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 9,
+          "valid_t1_targets": 8,
+          "earliest_feature_date": "2023-08-01",
+          "latest_feature_date": "2023-10-03",
+          "split_counts": {
+            "train": 9
+          }
+        },
+        {
+          "market": "Mangal Wedha APMC",
+          "variety": "Other",
+          "raw_records": 38,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 8,
+          "valid_t1_targets": 7,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2023-07-20",
+          "split_counts": {
+            "train": 8
+          }
+        },
+        {
+          "market": "Shrirampur APMC",
+          "variety": "Other",
+          "raw_records": 51,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 21,
+          "valid_t1_targets": 20,
+          "earliest_feature_date": "2023-07-12",
+          "latest_feature_date": "2023-08-05",
+          "split_counts": {
+            "train": 21
+          }
+        },
+        {
+          "market": "Nagpur APMC",
+          "variety": "Other",
+          "raw_records": 41,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 11,
+          "valid_t1_targets": 10,
+          "earliest_feature_date": "2023-07-22",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 11
+          }
+        },
+        {
+          "market": "Rahuri APMC",
+          "variety": "Other",
+          "raw_records": 44,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 14,
+          "valid_t1_targets": 13,
+          "earliest_feature_date": "2023-07-23",
+          "latest_feature_date": "2023-08-06",
+          "split_counts": {
+            "train": 14
+          }
+        },
+        {
+          "market": "Ahmednagar APMC",
+          "variety": "Other",
+          "raw_records": 38,
+          "warmup_dropped_records": 30,
+          "feature_rows_generated": 8,
+          "valid_t1_targets": 7,
+          "earliest_feature_date": "2023-09-22",
+          "latest_feature_date": "2023-10-30",
+          "split_counts": {
+            "train": 8
+          }
+        }
+      ]
+    }
+  ]
+}

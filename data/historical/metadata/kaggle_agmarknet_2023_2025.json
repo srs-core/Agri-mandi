@@ -1,0 +1,13 @@
+{
+  "dataset_identifier": "arjunyadav99/indian-agricultural-mandi-prices-20232025",
+  "dataset_title": "Indian Agricultural Mandi Prices (2023\u20132025)",
+  "dataset_owner": "arjunyadav99",
+  "dataset_url": "https://www.kaggle.com/datasets/arjunyadav99/indian-agricultural-mandi-prices-20232025",
+  "retrieval_timestamp": "2026-08-29T15:20:36.017476",
+  "license": "CC0-1.0 (Public Domain Dedication)",
+  "provenance_classification": "C. Third-Party Processed Agmarknet Dataset",
+  "original_source_claim": "Agmarknet Portal (https://www.agmarknet.gov.in/) under Ministry of Agriculture & Farmers Welfare, GoI",
+  "file_name": "Agriculture_price_dataset.csv",
+  "file_size_bytes": 55212516,
+  "sha256": "156d7f6357e7b90c8ab4ad8b0ce6baf94b2a99d952024148bd980d8a748410cb"
+}

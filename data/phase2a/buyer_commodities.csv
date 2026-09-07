@@ -1,0 +1,54 @@
+﻿buyer_external_id,commodity_name,min_quality_grade,typical_volume_quintals,source_url,source_type,last_verified,confidence
+B001,Fruits,,,https://mulyam.in/,Official company site,2026-08-27,High
+B001,Vegetables,,,https://mulyam.in/,Official company site,2026-08-27,High
+B002,Vegetables,,,https://tarkaree.in/,Official company site,2026-08-27,High
+B003,Fruits,,,https://www.purpelo.com/,Company site / LinkedIn,2026-08-27,High
+B004,Sweet Corn,,,https://indiaqofoods.com/,Official company site,2026-08-27,High
+B004,Vegetables,,,https://indiaqofoods.com/,Official company site,2026-08-27,High
+B004,Vegetables,,,https://indiaqofoods.com/,Official company site,2026-08-27,High
+B005,Fruits,,,https://fruitly.in/,Official company site,2026-08-27,High
+B006,Other crops,,,https://www.oceanempire.in/,Official company site,2026-08-27,Medium-High
+B006,poultry,,,https://www.oceanempire.in/,Official company site,2026-08-27,Medium-High
+B006,food commodities,,,https://www.oceanempire.in/,Official company site,2026-08-27,Medium-High
+B007,Onion,,,https://www.rainbowglobalexim.com/,Official company site,2026-08-27,High
+B007,rice,,,https://www.rainbowglobalexim.com/,Official company site,2026-08-27,High
+B007,Turmeric,,,https://www.rainbowglobalexim.com/,Official company site,2026-08-27,High
+B007,Green Chilli,,,https://www.rainbowglobalexim.com/,Official company site,2026-08-27,High
+B007,Alphonso mango,,,https://www.rainbowglobalexim.com/,Official company site,2026-08-27,High
+B008,Coconut,,,https://www.rajputoverseasexim.com/,Company site / public company profile,2026-08-27,High
+B008,Banana,,,https://www.rajputoverseasexim.com/,Company site / public company profile,2026-08-27,High
+B008,Onion,,,https://www.rajputoverseasexim.com/,Company site / public company profile,2026-08-27,High
+B008,apples,,,https://www.rajputoverseasexim.com/,Company site / public company profile,2026-08-27,High
+B008,oranges,,,https://www.rajputoverseasexim.com/,Company site / public company profile,2026-08-27,High
+B008,grapes,,,https://www.rajputoverseasexim.com/,Company site / public company profile,2026-08-27,High
+B008,guava,,,https://www.rajputoverseasexim.com/,Company site / public company profile,2026-08-27,High
+B008,Green Chilli,,,https://www.rajputoverseasexim.com/,Company site / public company profile,2026-08-27,High
+B008,Potato,,,https://www.rajputoverseasexim.com/,Company site / public company profile,2026-08-27,High
+B009,Pomegranate arils,,,https://agrinexus.in/,Official company site,2026-08-27,Medium
+B009,juices,,,https://agrinexus.in/,Official company site,2026-08-27,Medium
+B009,fruit pulps,,,https://agrinexus.in/,Official company site,2026-08-27,Medium
+B009,fruits & vegetables,,,https://agrinexus.in/,Official company site,2026-08-27,Medium
+B010,Fresh fruits,,,https://ecogreentrading.com/,Official company site,2026-08-27,Medium-High
+B010,Vegetables,,,https://ecogreentrading.com/,Official company site,2026-08-27,Medium-High
+B010,fresh/frozen/dehydrated products,,,https://ecogreentrading.com/,Official company site,2026-08-27,Medium-High
+B011,Fruits,,,https://waycool.in/logistic-distribution-solution,Official company page + public professional profile,2026-08-27,Medium
+B011,Vegetables,,,https://waycool.in/logistic-distribution-solution,Official company page + public professional profile,2026-08-27,Medium
+B012,Fruits,,,https://www.hyperpure.com/ind/pune,Pune marketplace page,2026-08-27,Medium-High
+B012,Vegetables,,,https://www.hyperpure.com/ind/pune,Pune marketplace page,2026-08-27,Medium-High
+B012,food ingredients,,,https://www.hyperpure.com/ind/pune,Pune marketplace page,2026-08-27,Medium-High
+B013,Food grains,,,https://mangalamtradingco.in/,Official company site,2026-08-27,High
+B013,Pulses,,,https://mangalamtradingco.in/,Official company site,2026-08-27,High
+B013,Spices,,,https://mangalamtradingco.in/,Official company site,2026-08-27,High
+B013,flour,,,https://mangalamtradingco.in/,Official company site,2026-08-27,High
+B013,sugar,,,https://mangalamtradingco.in/,Official company site,2026-08-27,High
+B013,agri commodities,,,https://mangalamtradingco.in/,Official company site,2026-08-27,High
+B014,Onion,,,https://www.globaleximlink.com/,Official company site,2026-08-27,High
+B014,Banana,,,https://www.globaleximlink.com/,Official company site,2026-08-27,High
+B014,Tomato,,,https://www.globaleximlink.com/,Official company site,2026-08-27,High
+B014,mixed vegetables,,,https://www.globaleximlink.com/,Official company site,2026-08-27,High
+B014,processed agri-products,,,https://www.globaleximlink.com/,Official company site,2026-08-27,High
+B015,Fresh fruits,,,https://ekviraexporthouse.com/,Official company site,2026-08-27,Medium-High
+B015,Vegetables,,,https://ekviraexporthouse.com/,Official company site,2026-08-27,Medium-High
+B015,Grains,,,https://ekviraexporthouse.com/,Official company site,2026-08-27,Medium-High
+B015,Spices,,,https://ekviraexporthouse.com/,Official company site,2026-08-27,Medium-High
+B015,beverages,,,https://ekviraexporthouse.com/,Official company site,2026-08-27,Medium-High

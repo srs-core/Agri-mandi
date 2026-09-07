@@ -1,0 +1,168 @@
+{
+  "commodity": "Potato (Jyoti)",
+  "commodity_slug": "potato",
+  "horizon": "t3",
+  "target_column": "target_price_t3",
+  "model_type": "XGBoost Regressor (Tuned)",
+  "model_file": "potato_t3_xgb.json",
+  "model_sha256": "703b4b056d8fd0edda72ef8f332750e54ea7c4e2bcbc5c7ff5166bcf8b3013cf",
+  "created_at": "2026-08-29T16:04:28.836101",
+  "random_seed": 42,
+  "best_hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 5,
+    "learning_rate": 0.05
+  },
+  "dataset_split_counts": {
+    "train_samples": 9154,
+    "val_samples": 1801,
+    "test_samples": 1297
+  },
+  "performance_metrics": {
+    "baseline": {
+      "train": {
+        "mae": 146.63,
+        "rmse": 419.63,
+        "mape": 10.2,
+        "r2": 0.6092,
+        "count": 9154
+      },
+      "val": {
+        "mae": 133.28,
+        "rmse": 230.39,
+        "mape": 9.17,
+        "r2": 0.6325,
+        "count": 1801
+      },
+      "test": {
+        "mae": 123.63,
+        "rmse": 218.18,
+        "mape": 8.61,
+        "r2": 0.4077,
+        "count": 1297
+      }
+    },
+    "xgboost": {
+      "train": {
+        "mae": 114.35,
+        "rmse": 207.11,
+        "mape": 9.04,
+        "r2": 0.9048,
+        "count": 9154
+      },
+      "val": {
+        "mae": 151.07,
+        "rmse": 226.41,
+        "mape": 10.85,
+        "r2": 0.6451,
+        "count": 1801
+      },
+      "test": {
+        "mae": 138.26,
+        "rmse": 221.0,
+        "mape": 9.97,
+        "r2": 0.3923,
+        "count": 1297
+      }
+    },
+    "test_improvement_over_baseline": {
+      "mae_reduction_pct": -11.83,
+      "rmse_reduction_pct": -1.29
+    }
+  },
+  "uncertainty_parameters": {
+    "method": "empirical_validation_residuals",
+    "confidence_level": "80% empirical prediction interval",
+    "residual_q10": -282.64,
+    "residual_q50": -63.59,
+    "residual_q90": 139.95,
+    "formula": "predicted_price + [residual_q10, residual_q90]"
+  },
+  "top_10_features": [
+    {
+      "feature": "rolling_median_7",
+      "raw_gain": 90893688.0,
+      "normalized_gain_pct": 32.26
+    },
+    {
+      "feature": "modal_price",
+      "raw_gain": 55723044.0,
+      "normalized_gain_pct": 19.78
+    },
+    {
+      "feature": "is_saturday",
+      "raw_gain": 23044576.0,
+      "normalized_gain_pct": 8.18
+    },
+    {
+      "feature": "rolling_mean_7",
+      "raw_gain": 18642912.0,
+      "normalized_gain_pct": 6.62
+    },
+    {
+      "feature": "lag_1",
+      "raw_gain": 18534340.0,
+      "normalized_gain_pct": 6.58
+    },
+    {
+      "feature": "rolling_std_7",
+      "raw_gain": 6826146.0,
+      "normalized_gain_pct": 2.42
+    },
+    {
+      "feature": "rolling_mean_14",
+      "raw_gain": 5107590.0,
+      "normalized_gain_pct": 1.81
+    },
+    {
+      "feature": "max_price",
+      "raw_gain": 4056963.0,
+      "normalized_gain_pct": 1.44
+    },
+    {
+      "feature": "season_kharif",
+      "raw_gain": 3959640.5,
+      "normalized_gain_pct": 1.41
+    },
+    {
+      "feature": "lag_14",
+      "raw_gain": 3543262.25,
+      "normalized_gain_pct": 1.26
+    }
+  ],
+  "market_encoding": {
+    "Ahmednagar APMC": 1,
+    "Akluj APMC": 2,
+    "Akola APMC": 3,
+    "Amravati APMC": 4,
+    "Bhusaval APMC": 5,
+    "Chandrapur(Ganjwad) APMC": 6,
+    "Hingna APMC": 7,
+    "Islampur APMC": 8,
+    "Jalgaon APMC": 9,
+    "Junnar APMC": 10,
+    "Junnar APMC (Narayangaon Sub-yard)": 11,
+    "Junnar APMC (Otur Sub-yard)": 12,
+    "Kalyan APMC": 13,
+    "Kamthi APMC": 14,
+    "Khed APMC (Chakan Yard)": 15,
+    "Manchar APMC": 16,
+    "Nagpur APMC": 17,
+    "Nashik APMC": 18,
+    "Pen APMC": 19,
+    "Pune APMC (Gultekdi)": 20,
+    "Pune APMC (Khadki Sub-yard)": 21,
+    "Pune APMC (Manjri Sub-yard)": 22,
+    "Pune APMC (Moshi Sub-yard)": 23,
+    "Rahata APMC": 24,
+    "Rahuri APMC": 25,
+    "Ramtek APMC": 26,
+    "Sangli(Phale, Bhajipura Market) APMC": 27,
+    "Satara APMC": 28,
+    "Shrirampur APMC": 29,
+    "Solapur APMC": 30,
+    "Vai APMC": 31,
+    "Vashi APMC (Mumbai)": 32,
+    "Vita APMC": 33
+  }
+}

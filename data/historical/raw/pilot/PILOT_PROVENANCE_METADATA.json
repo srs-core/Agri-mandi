@@ -1,0 +1,32 @@
+{
+  "pilot_investigation": {
+    "title": "Phase 2C Real Historical Source Acquisition Pilot",
+    "timestamp": "2026-08-29T14:02:00+05:30",
+    "status": "COMPLETED",
+    "sources_evaluated": [
+      {
+        "source_name": "Agmarknet via OGD India (data.gov.in)",
+        "api_endpoint": "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070",
+        "historical_capability": "Daily rolling snapshot feed; does not support multi-year historical queries via API",
+        "rate_limiting": "Strict 429 rate limit on public demo key (10 records/page)"
+      },
+      {
+        "source_name": "Agmarknet 2.0 Official Web Portal (agmarknet.gov.in)",
+        "api_base": "https://api.agmarknet.gov.in/v1",
+        "historical_capability": "Supports date-wise commodity queries via web interface; unauthenticated automated calls require session state",
+        "access_method": "Interactive web reports / CSV exports"
+      },
+      {
+        "source_name": "Open Agricultural Research Repositories (NHB / Mendeley Data DOI 10.17632)",
+        "historical_capability": "Direct historical daily mandi price and arrival series for TOP crops (Tomato, Onion, Potato) across Lasalgaon, Pune, Manchar, Pimpalgaon",
+        "verified_date_range": "2023-01-01 to 2024-12-31"
+      }
+    ],
+    "target_commodities": ["Onion", "Tomato", "Potato"],
+    "target_markets": ["Pune APMC (Gultekdi)", "Manchar APMC", "Khed APMC (Chakan)", "Lasalgaon APMC", "Pimpalgaon Baswant APMC"],
+    "pilot_file_paths": [
+      "data/historical/raw/pilot/pilot_agmarknet_top_crops_2023_2024.json",
+      "data/historical/raw/pilot/pilot_agmarknet_top_crops_2023_2024.csv"
+    ]
+  }
+}
