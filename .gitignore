@@ -1,0 +1,35 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.mypy_cache/
+.venv/
+venv/
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local development data
+*.sqlite3
+*.db
+postgres-data/
+
+# Temporary / Scratch files
+.Rhistory
+/map_verification_screenshot.png
+AgriMandi_Phase2A_Pune_CSV_Package*
+

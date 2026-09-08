@@ -1,0 +1,189 @@
+{
+  "commodity": "Wheat (Sharbati)",
+  "commodity_slug": "wheat",
+  "horizon": "t1",
+  "target_column": "target_price_t1",
+  "model_type": "XGBoost Regressor (Tuned)",
+  "model_file": "wheat_t1_xgb.json",
+  "model_sha256": "463cb0d626f403d914abec88d78d2ecfa688e5fdbc2adc77aa6c36b15996500b",
+  "created_at": "2026-08-29T16:04:36.118547",
+  "random_seed": 42,
+  "best_hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 5,
+    "learning_rate": 0.05
+  },
+  "dataset_split_counts": {
+    "train_samples": 5737,
+    "val_samples": 0,
+    "test_samples": 0
+  },
+  "performance_metrics": {
+    "baseline": {
+      "train": {
+        "mae": 110.16,
+        "rmse": 206.84,
+        "mape": 4.15,
+        "r2": 0.8168,
+        "count": 5737
+      },
+      "val": {},
+      "test": {}
+    },
+    "xgboost": {
+      "train": {
+        "mae": 78.87,
+        "rmse": 119.77,
+        "mape": 3.0,
+        "r2": 0.9386,
+        "count": 5737
+      },
+      "val": {},
+      "test": {}
+    },
+    "test_improvement_over_baseline": {
+      "mae_reduction_pct": 0.0,
+      "rmse_reduction_pct": 0.0
+    }
+  },
+  "uncertainty_parameters": {
+    "method": "none",
+    "reason": "no_validation_set"
+  },
+  "top_10_features": [
+    {
+      "feature": "rolling_mean_30",
+      "raw_gain": 43040784.0,
+      "normalized_gain_pct": 34.42
+    },
+    {
+      "feature": "rolling_median_7",
+      "raw_gain": 27669876.0,
+      "normalized_gain_pct": 22.13
+    },
+    {
+      "feature": "rolling_min_7",
+      "raw_gain": 13819976.0,
+      "normalized_gain_pct": 11.05
+    },
+    {
+      "feature": "rolling_mean_7",
+      "raw_gain": 10078282.0,
+      "normalized_gain_pct": 8.06
+    },
+    {
+      "feature": "rolling_median_30",
+      "raw_gain": 9217115.0,
+      "normalized_gain_pct": 7.37
+    },
+    {
+      "feature": "modal_price",
+      "raw_gain": 3621299.25,
+      "normalized_gain_pct": 2.9
+    },
+    {
+      "feature": "rolling_mean_14",
+      "raw_gain": 3035446.0,
+      "normalized_gain_pct": 2.43
+    },
+    {
+      "feature": "rolling_max_7",
+      "raw_gain": 2292210.25,
+      "normalized_gain_pct": 1.83
+    },
+    {
+      "feature": "lag_1",
+      "raw_gain": 2216564.0,
+      "normalized_gain_pct": 1.77
+    },
+    {
+      "feature": "lag_7",
+      "raw_gain": 1529039.62,
+      "normalized_gain_pct": 1.22
+    }
+  ],
+  "market_encoding": {
+    "Achalpur APMC": 1,
+    "Ahmednagar APMC": 2,
+    "Akola APMC": 3,
+    "Amalner APMC": 4,
+    "Amarawati APMC": 5,
+    "Anajngaon APMC": 6,
+    "Baramati APMC": 7,
+    "Barshi APMC": 8,
+    "Barshi(Vairag) APMC": 9,
+    "Beed APMC": 10,
+    "Bhokar APMC": 11,
+    "Chalisgaon APMC": 12,
+    "Chandur Bazar APMC": 13,
+    "Chopada APMC": 14,
+    "Daund APMC": 15,
+    "Dhamngaon-Railway APMC": 16,
+    "Dhule APMC": 17,
+    "Dondaicha APMC": 18,
+    "Gangakhed APMC": 19,
+    "Gevrai APMC": 20,
+    "Hinganghat APMC": 21,
+    "Hingoli APMC": 22,
+    "Jamkhed APMC": 23,
+    "Kada APMC": 24,
+    "Kaij APMC": 25,
+    "Kalvan APMC": 26,
+    "Karjat(Raigad) APMC": 27,
+    "Karmala APMC": 28,
+    "Katol APMC": 29,
+    "Kille Dharur APMC": 30,
+    "Kopargaon APMC": 31,
+    "Kurdwadi(Modnimb) APMC": 32,
+    "Lasalgaon APMC": 33,
+    "Lasalgaon(Vinchur) APMC": 34,
+    "Loha APMC": 35,
+    "Majalgaon APMC": 36,
+    "Malegaon APMC": 37,
+    "Mangal Wedha APMC": 38,
+    "Manmad APMC": 39,
+    "Morshi APMC": 40,
+    "Mumbai APMC": 41,
+    "Murtizapur APMC": 42,
+    "Nagpur APMC": 43,
+    "Nanded APMC": 44,
+    "Nandgaon APMC": 45,
+    "Nandurbar APMC": 46,
+    "Navapur APMC": 47,
+    "Om Chaitanya Multistate Agro Purpose Coop Society APMC": 48,
+    "Pachora APMC": 49,
+    "Palghar APMC": 50,
+    "Parbhani APMC": 51,
+    "Parola APMC": 52,
+    "Pathardi APMC": 53,
+    "Pathari APMC": 54,
+    "Pune APMC (Gultekdi)": 55,
+    "Rahata APMC": 56,
+    "Rahuri APMC": 57,
+    "Rahuri(Vambori) APMC": 58,
+    "Raver APMC": 59,
+    "Sangli APMC": 60,
+    "Satana APMC": 61,
+    "Savner APMC": 62,
+    "Shahada APMC": 63,
+    "Shevgaon APMC": 64,
+    "Shevgaon(Bodhegaon) APMC": 65,
+    "Shirpur APMC": 66,
+    "Shrigonda APMC": 67,
+    "Shrirampur APMC": 68,
+    "Shrirampur(Belapur) APMC": 69,
+    "Sindi(Selu) APMC": 70,
+    "Sinner APMC": 71,
+    "Solapur APMC": 72,
+    "Tasgaon APMC": 73,
+    "Telhara APMC": 74,
+    "Tumsar APMC": 75,
+    "Ulhasnagar APMC": 76,
+    "Umared APMC": 77,
+    "Vaduj APMC": 78,
+    "Vasai APMC": 79,
+    "Wardha APMC": 80,
+    "Yawal APMC": 81,
+    "Yeola APMC": 82
+  }
+}

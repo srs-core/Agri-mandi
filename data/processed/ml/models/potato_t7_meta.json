@@ -1,0 +1,172 @@
+{
+  "commodity": "Potato (Jyoti)",
+  "commodity_slug": "potato",
+  "horizon": "t7",
+  "target_column": "target_price_t7",
+  "model_type": "XGBoost Regressor (Tuned)",
+  "model_file": "potato_t7_xgb.json",
+  "model_sha256": "e1c7c5e426f6dbd694f1aa5729238963d79284f0a7f7c27eb930a58e7f90e614",
+  "created_at": "2026-08-29T16:04:30.170516",
+  "random_seed": 42,
+  "best_hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 4,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.5,
+    "reg_lambda": 1.0
+  },
+  "dataset_split_counts": {
+    "train_samples": 9146,
+    "val_samples": 1796,
+    "test_samples": 1165
+  },
+  "performance_metrics": {
+    "baseline": {
+      "train": {
+        "mae": 179.99,
+        "rmse": 430.68,
+        "mape": 13.06,
+        "r2": 0.5766,
+        "count": 9146
+      },
+      "val": {
+        "mae": 156.47,
+        "rmse": 249.76,
+        "mape": 11.01,
+        "r2": 0.5069,
+        "count": 1796
+      },
+      "test": {
+        "mae": 138.02,
+        "rmse": 222.39,
+        "mape": 9.69,
+        "r2": 0.3601,
+        "count": 1165
+      }
+    },
+    "xgboost": {
+      "train": {
+        "mae": 146.73,
+        "rmse": 283.73,
+        "mape": 11.56,
+        "r2": 0.8163,
+        "count": 9146
+      },
+      "val": {
+        "mae": 198.19,
+        "rmse": 261.04,
+        "mape": 14.71,
+        "r2": 0.4614,
+        "count": 1796
+      },
+      "test": {
+        "mae": 171.0,
+        "rmse": 228.33,
+        "mape": 12.32,
+        "r2": 0.3254,
+        "count": 1165
+      }
+    },
+    "test_improvement_over_baseline": {
+      "mae_reduction_pct": -23.9,
+      "rmse_reduction_pct": -2.67
+    }
+  },
+  "uncertainty_parameters": {
+    "method": "empirical_validation_residuals",
+    "confidence_level": "80% empirical prediction interval",
+    "residual_q10": -387.01,
+    "residual_q50": -136.19,
+    "residual_q90": 83.87,
+    "formula": "predicted_price + [residual_q10, residual_q90]"
+  },
+  "top_10_features": [
+    {
+      "feature": "rolling_median_7",
+      "raw_gain": 181714064.0,
+      "normalized_gain_pct": 28.24
+    },
+    {
+      "feature": "modal_price",
+      "raw_gain": 148759264.0,
+      "normalized_gain_pct": 23.12
+    },
+    {
+      "feature": "lag_1",
+      "raw_gain": 109535744.0,
+      "normalized_gain_pct": 17.02
+    },
+    {
+      "feature": "rolling_mean_7",
+      "raw_gain": 44304040.0,
+      "normalized_gain_pct": 6.88
+    },
+    {
+      "feature": "min_price",
+      "raw_gain": 21527130.0,
+      "normalized_gain_pct": 3.35
+    },
+    {
+      "feature": "rolling_mean_14",
+      "raw_gain": 11053741.0,
+      "normalized_gain_pct": 1.72
+    },
+    {
+      "feature": "rolling_min_7",
+      "raw_gain": 8472479.0,
+      "normalized_gain_pct": 1.32
+    },
+    {
+      "feature": "lag_3",
+      "raw_gain": 7119424.0,
+      "normalized_gain_pct": 1.11
+    },
+    {
+      "feature": "season_rabi",
+      "raw_gain": 6620599.5,
+      "normalized_gain_pct": 1.03
+    },
+    {
+      "feature": "day_of_year",
+      "raw_gain": 6589663.5,
+      "normalized_gain_pct": 1.02
+    }
+  ],
+  "market_encoding": {
+    "Ahmednagar APMC": 1,
+    "Akluj APMC": 2,
+    "Akola APMC": 3,
+    "Amravati APMC": 4,
+    "Bhusaval APMC": 5,
+    "Chandrapur(Ganjwad) APMC": 6,
+    "Hingna APMC": 7,
+    "Islampur APMC": 8,
+    "Jalgaon APMC": 9,
+    "Junnar APMC": 10,
+    "Junnar APMC (Narayangaon Sub-yard)": 11,
+    "Junnar APMC (Otur Sub-yard)": 12,
+    "Kalyan APMC": 13,
+    "Kamthi APMC": 14,
+    "Khed APMC (Chakan Yard)": 15,
+    "Manchar APMC": 16,
+    "Nagpur APMC": 17,
+    "Nashik APMC": 18,
+    "Pen APMC": 19,
+    "Pune APMC (Gultekdi)": 20,
+    "Pune APMC (Khadki Sub-yard)": 21,
+    "Pune APMC (Manjri Sub-yard)": 22,
+    "Pune APMC (Moshi Sub-yard)": 23,
+    "Rahata APMC": 24,
+    "Rahuri APMC": 25,
+    "Ramtek APMC": 26,
+    "Sangli(Phale, Bhajipura Market) APMC": 27,
+    "Satara APMC": 28,
+    "Shrirampur APMC": 29,
+    "Solapur APMC": 30,
+    "Vai APMC": 31,
+    "Vashi APMC (Mumbai)": 32,
+    "Vita APMC": 33
+  }
+}

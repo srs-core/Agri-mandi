@@ -1,0 +1,73 @@
+{
+  "pipeline_version": "1.0.0",
+  "pipeline_execution_timestamp": "2026-08-29T15:28:16.037241",
+  "input_dataset": {
+    "source_path": "data\\historical\\raw\\kaggle\\Agriculture_price_dataset.csv",
+    "file_size_bytes": 55212516,
+    "sha256": "156d7f6357e7b90c8ab4ad8b0ce6baf94b2a99d952024148bd980d8a748410cb",
+    "total_records": 737392,
+    "provenance": "C. Third-Party Processed / Agmarknet-Derived Dataset",
+    "license": "CC0-1.0 (Public Domain Dedication)"
+  },
+  "output_artifacts": {
+    "filtered_market_data": {
+      "path": "data\\processed\\ml\\filtered_market_data.csv",
+      "file_size_bytes": 10119873,
+      "sha256": "df72c5a001f5ff926036106e0ddf58e532c0b12ddc89f51da9c4786b101880e9",
+      "record_count": 51813
+    },
+    "rejected_records": {
+      "path": "data\\processed\\ml\\rejected_records.csv",
+      "file_size_bytes": 69132271,
+      "sha256": "c25a397e69097e8b18134ad47595ea095072653cae18a5670fa2e8de974c2358",
+      "record_count": 685579
+    },
+    "quality_report": {
+      "path": "data\\processed\\ml\\quality_report.json"
+    }
+  },
+  "filtering_rules": {
+    "state_scope": "Maharashtra",
+    "target_commodities": [
+      "Potato",
+      "Onion",
+      "Tomato",
+      "Wheat",
+      "Rice"
+    ],
+    "non_crop_exclusions_enforced": [
+      "chicken",
+      "cream",
+      "prawn",
+      "egg",
+      "poultry",
+      "eggs",
+      "meat",
+      "dairy",
+      "milk",
+      "butter",
+      "ghee",
+      "mutton",
+      "curd",
+      "fish",
+      "paneer"
+    ],
+    "price_inversion_rejection_enforced": true,
+    "date_range_observed": {
+      "start": "2023-06-06",
+      "end": "2025-06-11"
+    }
+  },
+  "rejection_breakdown": {
+    "out_of_state_scope": 685576,
+    "non_positive_price": 3
+  },
+  "series_summary": {
+    "total_series": 344,
+    "class_a_strong_series": 19,
+    "class_b_usable_series": 21,
+    "class_c_sparse_series": 168,
+    "class_d_insufficient_series": 136,
+    "ml_ready_series_count": 40
+  }
+}

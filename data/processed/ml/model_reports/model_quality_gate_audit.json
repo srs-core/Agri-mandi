@@ -1,0 +1,1038 @@
+{
+  "audit_matrix": [
+    {
+      "commodity": "Potato (Jyoti)",
+      "tier": "TIER_1",
+      "horizon": "Next-Day (t+1)",
+      "horizon_slug": "t1",
+      "test_count": 1365,
+      "base_mae": 107.5,
+      "base_rmse": 195.94,
+      "base_mape": 7.53,
+      "base_r2": 0.5297,
+      "xgb_mae": 111.41,
+      "xgb_rmse": 175.11,
+      "xgb_mape": 8.11,
+      "xgb_r2": 0.6244,
+      "mae_imp_pct": -3.64,
+      "rmse_imp_pct": 10.63,
+      "mape_imp_pct": -7.7,
+      "grade": "B",
+      "beats_baseline": true,
+      "verdict_reason": "Mixed result: RMSE improves (variance reduction), but baseline has lower MAE"
+    },
+    {
+      "commodity": "Potato (Jyoti)",
+      "tier": "TIER_1",
+      "horizon": "3-Day Ahead (t+3)",
+      "horizon_slug": "t3",
+      "test_count": 1297,
+      "base_mae": 123.63,
+      "base_rmse": 218.18,
+      "base_mape": 8.61,
+      "base_r2": 0.4077,
+      "xgb_mae": 138.26,
+      "xgb_rmse": 221.0,
+      "xgb_mape": 9.97,
+      "xgb_r2": 0.3923,
+      "mae_imp_pct": -11.83,
+      "rmse_imp_pct": -1.29,
+      "mape_imp_pct": -15.8,
+      "grade": "D",
+      "beats_baseline": false,
+      "verdict_reason": "Worse than baseline"
+    },
+    {
+      "commodity": "Potato (Jyoti)",
+      "tier": "TIER_1",
+      "horizon": "7-Day Ahead (t+7)",
+      "horizon_slug": "t7",
+      "test_count": 1165,
+      "base_mae": 138.02,
+      "base_rmse": 222.39,
+      "base_mape": 9.69,
+      "base_r2": 0.3601,
+      "xgb_mae": 171.0,
+      "xgb_rmse": 228.33,
+      "xgb_mape": 12.32,
+      "xgb_r2": 0.3254,
+      "mae_imp_pct": -23.9,
+      "rmse_imp_pct": -2.67,
+      "mape_imp_pct": -27.14,
+      "grade": "D",
+      "beats_baseline": false,
+      "verdict_reason": "Worse than baseline"
+    },
+    {
+      "commodity": "Onion (Nashik Red)",
+      "tier": "TIER_1",
+      "horizon": "Next-Day (t+1)",
+      "horizon_slug": "t1",
+      "test_count": 3050,
+      "base_mae": 94.99,
+      "base_rmse": 236.09,
+      "base_mape": 8.6,
+      "base_r2": 0.3685,
+      "xgb_mae": 126.13,
+      "xgb_rmse": 217.73,
+      "xgb_mape": 13.08,
+      "xgb_r2": 0.4629,
+      "mae_imp_pct": -32.78,
+      "rmse_imp_pct": 7.78,
+      "mape_imp_pct": -52.09,
+      "grade": "B",
+      "beats_baseline": true,
+      "verdict_reason": "Mixed result: RMSE improves (variance reduction), but baseline has lower MAE"
+    },
+    {
+      "commodity": "Onion (Nashik Red)",
+      "tier": "TIER_1",
+      "horizon": "3-Day Ahead (t+3)",
+      "horizon_slug": "t3",
+      "test_count": 2860,
+      "base_mae": 125.46,
+      "base_rmse": 265.63,
+      "base_mape": 11.61,
+      "base_r2": 0.1991,
+      "xgb_mae": 237.17,
+      "xgb_rmse": 337.87,
+      "xgb_mape": 24.2,
+      "xgb_r2": -0.2958,
+      "mae_imp_pct": -89.04,
+      "rmse_imp_pct": -27.2,
+      "mape_imp_pct": -108.44,
+      "grade": "D",
+      "beats_baseline": false,
+      "verdict_reason": "Worse than baseline"
+    },
+    {
+      "commodity": "Onion (Nashik Red)",
+      "tier": "TIER_1",
+      "horizon": "7-Day Ahead (t+7)",
+      "horizon_slug": "t7",
+      "test_count": 2489,
+      "base_mae": 156.51,
+      "base_rmse": 295.21,
+      "base_mape": 14.33,
+      "base_r2": 0.0109,
+      "xgb_mae": 391.03,
+      "xgb_rmse": 472.35,
+      "xgb_mape": 39.14,
+      "xgb_r2": -1.5323,
+      "mae_imp_pct": -149.84,
+      "rmse_imp_pct": -60.0,
+      "mape_imp_pct": -173.13,
+      "grade": "D",
+      "beats_baseline": false,
+      "verdict_reason": "Worse than baseline"
+    },
+    {
+      "commodity": "Wheat (Sharbati)",
+      "tier": "TIER_2",
+      "horizon": "Next-Day (t+1)",
+      "horizon_slug": "t1",
+      "test_count": 0,
+      "base_mae": 0.0,
+      "base_rmse": 0.0,
+      "base_mape": 0.0,
+      "base_r2": 0.0,
+      "xgb_mae": 0.0,
+      "xgb_rmse": 0.0,
+      "xgb_mape": 0.0,
+      "xgb_r2": 0.0,
+      "mae_imp_pct": 0.0,
+      "rmse_imp_pct": 0.0,
+      "mape_imp_pct": 0.0,
+      "grade": "C",
+      "beats_baseline": false,
+      "verdict_reason": "No 2025 Test observations in source dataset (Training history only)"
+    },
+    {
+      "commodity": "Wheat (Sharbati)",
+      "tier": "TIER_2",
+      "horizon": "3-Day Ahead (t+3)",
+      "horizon_slug": "t3",
+      "test_count": 0,
+      "base_mae": 0.0,
+      "base_rmse": 0.0,
+      "base_mape": 0.0,
+      "base_r2": 0.0,
+      "xgb_mae": 0.0,
+      "xgb_rmse": 0.0,
+      "xgb_mape": 0.0,
+      "xgb_r2": 0.0,
+      "mae_imp_pct": 0.0,
+      "rmse_imp_pct": 0.0,
+      "mape_imp_pct": 0.0,
+      "grade": "C",
+      "beats_baseline": false,
+      "verdict_reason": "No 2025 Test observations in source dataset (Training history only)"
+    },
+    {
+      "commodity": "Wheat (Sharbati)",
+      "tier": "TIER_2",
+      "horizon": "7-Day Ahead (t+7)",
+      "horizon_slug": "t7",
+      "test_count": 0,
+      "base_mae": 0.0,
+      "base_rmse": 0.0,
+      "base_mape": 0.0,
+      "base_r2": 0.0,
+      "xgb_mae": 0.0,
+      "xgb_rmse": 0.0,
+      "xgb_mape": 0.0,
+      "xgb_r2": 0.0,
+      "mae_imp_pct": 0.0,
+      "rmse_imp_pct": 0.0,
+      "mape_imp_pct": 0.0,
+      "grade": "C",
+      "beats_baseline": false,
+      "verdict_reason": "No 2025 Test observations in source dataset (Training history only)"
+    },
+    {
+      "commodity": "Tomato (Hybrid)",
+      "tier": "TIER_2",
+      "horizon": "Next-Day (t+1)",
+      "horizon_slug": "t1",
+      "test_count": 0,
+      "base_mae": 0.0,
+      "base_rmse": 0.0,
+      "base_mape": 0.0,
+      "base_r2": 0.0,
+      "xgb_mae": 0.0,
+      "xgb_rmse": 0.0,
+      "xgb_mape": 0.0,
+      "xgb_r2": 0.0,
+      "mae_imp_pct": 0.0,
+      "rmse_imp_pct": 0.0,
+      "mape_imp_pct": 0.0,
+      "grade": "C",
+      "beats_baseline": false,
+      "verdict_reason": "No 2025 Test observations in source dataset (Training history only)"
+    },
+    {
+      "commodity": "Tomato (Hybrid)",
+      "tier": "TIER_2",
+      "horizon": "3-Day Ahead (t+3)",
+      "horizon_slug": "t3",
+      "test_count": 0,
+      "base_mae": 0.0,
+      "base_rmse": 0.0,
+      "base_mape": 0.0,
+      "base_r2": 0.0,
+      "xgb_mae": 0.0,
+      "xgb_rmse": 0.0,
+      "xgb_mape": 0.0,
+      "xgb_r2": 0.0,
+      "mae_imp_pct": 0.0,
+      "rmse_imp_pct": 0.0,
+      "mape_imp_pct": 0.0,
+      "grade": "C",
+      "beats_baseline": false,
+      "verdict_reason": "No 2025 Test observations in source dataset (Training history only)"
+    },
+    {
+      "commodity": "Tomato (Hybrid)",
+      "tier": "TIER_2",
+      "horizon": "7-Day Ahead (t+7)",
+      "horizon_slug": "t7",
+      "test_count": 0,
+      "base_mae": 0.0,
+      "base_rmse": 0.0,
+      "base_mape": 0.0,
+      "base_r2": 0.0,
+      "xgb_mae": 0.0,
+      "xgb_rmse": 0.0,
+      "xgb_mape": 0.0,
+      "xgb_r2": 0.0,
+      "mae_imp_pct": 0.0,
+      "rmse_imp_pct": 0.0,
+      "mape_imp_pct": 0.0,
+      "grade": "C",
+      "beats_baseline": false,
+      "verdict_reason": "No 2025 Test observations in source dataset (Training history only)"
+    }
+  ],
+  "error_analysis": {
+    "potato_t1": {
+      "commodity": "Potato (Jyoti)",
+      "horizon": "Next-Day (t+1)",
+      "n_test": 1365,
+      "med_ae_base": 50.0,
+      "med_ae_xgb": 69.08,
+      "p90_ae_base": 250.0,
+      "p90_ae_xgb": 235.18,
+      "p99_ae_base": 818.0,
+      "p99_ae_xgb": 685.1,
+      "max_err_base": 1700.0,
+      "max_err_xgb": 1473.4,
+      "low_price_regime_rmse": {
+        "baseline": 203.52,
+        "xgb": 190.67
+      },
+      "high_price_regime_rmse": {
+        "baseline": 187.54,
+        "xgb": 156.85
+      },
+      "variance_reduction_explanation": "XGBoost reduces 99th percentile error from Rs. 818.0 to Rs. 685.1 and max error from Rs. 1700.0 to Rs. 1473.4"
+    },
+    "potato_t3": {
+      "commodity": "Potato (Jyoti)",
+      "horizon": "3-Day Ahead (t+3)",
+      "n_test": 1297,
+      "med_ae_base": 100.0,
+      "med_ae_xgb": 97.05,
+      "p90_ae_base": 300.0,
+      "p90_ae_xgb": 282.54,
+      "p99_ae_base": 900.0,
+      "p99_ae_xgb": 750.91,
+      "max_err_base": 1750.0,
+      "max_err_xgb": 2909.12,
+      "low_price_regime_rmse": {
+        "baseline": 216.89,
+        "xgb": 235.22
+      },
+      "high_price_regime_rmse": {
+        "baseline": 219.53,
+        "xgb": 204.99
+      },
+      "variance_reduction_explanation": "XGBoost reduces 99th percentile error from Rs. 900.0 to Rs. 750.9 and max error from Rs. 1750.0 to Rs. 2909.1"
+    },
+    "potato_t7": {
+      "commodity": "Potato (Jyoti)",
+      "horizon": "7-Day Ahead (t+7)",
+      "n_test": 1165,
+      "med_ae_base": 100.0,
+      "med_ae_xgb": 138.27,
+      "p90_ae_base": 300.0,
+      "p90_ae_xgb": 340.24,
+      "p99_ae_base": 868.0,
+      "p99_ae_xgb": 744.42,
+      "max_err_base": 1640.0,
+      "max_err_xgb": 1476.89,
+      "low_price_regime_rmse": {
+        "baseline": 226.91,
+        "xgb": 269.07
+      },
+      "high_price_regime_rmse": {
+        "baseline": 217.66,
+        "xgb": 177.04
+      },
+      "variance_reduction_explanation": "XGBoost reduces 99th percentile error from Rs. 868.0 to Rs. 744.4 and max error from Rs. 1640.0 to Rs. 1476.9"
+    },
+    "onion_t1": {
+      "commodity": "Onion (Nashik Red)",
+      "horizon": "Next-Day (t+1)",
+      "n_test": 3050,
+      "med_ae_base": 50.0,
+      "med_ae_xgb": 88.38,
+      "p90_ae_base": 200.0,
+      "p90_ae_xgb": 253.56,
+      "p99_ae_base": 600.0,
+      "p99_ae_xgb": 632.93,
+      "max_err_base": 6150.0,
+      "max_err_xgb": 6140.3,
+      "low_price_regime_rmse": {
+        "baseline": 143.58,
+        "xgb": 186.97
+      },
+      "high_price_regime_rmse": {
+        "baseline": 312.46,
+        "xgb": 249.5
+      },
+      "variance_reduction_explanation": "XGBoost reduces 99th percentile error from Rs. 600.0 to Rs. 632.9 and max error from Rs. 6150.0 to Rs. 6140.3"
+    },
+    "onion_t3": {
+      "commodity": "Onion (Nashik Red)",
+      "horizon": "3-Day Ahead (t+3)",
+      "n_test": 2860,
+      "med_ae_base": 100.0,
+      "med_ae_xgb": 187.02,
+      "p90_ae_base": 300.0,
+      "p90_ae_xgb": 473.96,
+      "p99_ae_base": 633.38,
+      "p99_ae_xgb": 1008.15,
+      "max_err_base": 6700.0,
+      "max_err_xgb": 6290.17,
+      "low_price_regime_rmse": {
+        "baseline": 238.21,
+        "xgb": 335.89
+      },
+      "high_price_regime_rmse": {
+        "baseline": 296.4,
+        "xgb": 340.34
+      },
+      "variance_reduction_explanation": "XGBoost reduces 99th percentile error from Rs. 633.4 to Rs. 1008.2 and max error from Rs. 6700.0 to Rs. 6290.2"
+    },
+    "onion_t7": {
+      "commodity": "Onion (Nashik Red)",
+      "horizon": "7-Day Ahead (t+7)",
+      "n_test": 2489,
+      "med_ae_base": 100.0,
+      "med_ae_xgb": 352.15,
+      "p90_ae_base": 300.4,
+      "p90_ae_xgb": 680.29,
+      "p99_ae_base": 700.0,
+      "p99_ae_xgb": 1142.02,
+      "max_err_base": 6400.0,
+      "max_err_xgb": 6377.32,
+      "low_price_regime_rmse": {
+        "baseline": 192.9,
+        "xgb": 482.11
+      },
+      "high_price_regime_rmse": {
+        "baseline": 388.23,
+        "xgb": 459.62
+      },
+      "variance_reduction_explanation": "XGBoost reduces 99th percentile error from Rs. 700.0 to Rs. 1142.0 and max error from Rs. 6400.0 to Rs. 6377.3"
+    }
+  },
+  "interval_audit": {
+    "potato_t1": {
+      "commodity": "Potato (Jyoti)",
+      "horizon": "Next-Day (t+1)",
+      "nominal_coverage_pct": 80.0,
+      "actual_test_coverage_pct": 82.93,
+      "average_interval_width_inr": 353.77,
+      "q10_offset": -244.61,
+      "q90_offset": 109.16,
+      "verdict": "Valid Empirical Interval"
+    },
+    "potato_t3": {
+      "commodity": "Potato (Jyoti)",
+      "horizon": "3-Day Ahead (t+3)",
+      "nominal_coverage_pct": 80.0,
+      "actual_test_coverage_pct": 84.58,
+      "average_interval_width_inr": 422.59,
+      "q10_offset": -282.64,
+      "q90_offset": 139.95,
+      "verdict": "Valid Empirical Interval"
+    },
+    "potato_t7": {
+      "commodity": "Potato (Jyoti)",
+      "horizon": "7-Day Ahead (t+7)",
+      "nominal_coverage_pct": 80.0,
+      "actual_test_coverage_pct": 85.49,
+      "average_interval_width_inr": 470.88,
+      "q10_offset": -387.01,
+      "q90_offset": 83.87,
+      "verdict": "Valid Empirical Interval"
+    },
+    "onion_t1": {
+      "commodity": "Onion (Nashik Red)",
+      "horizon": "Next-Day (t+1)",
+      "nominal_coverage_pct": 80.0,
+      "actual_test_coverage_pct": 92.3,
+      "average_interval_width_inr": 533.44,
+      "q10_offset": -417.21,
+      "q90_offset": 116.23,
+      "verdict": "Valid Empirical Interval"
+    },
+    "onion_t3": {
+      "commodity": "Onion (Nashik Red)",
+      "horizon": "3-Day Ahead (t+3)",
+      "nominal_coverage_pct": 80.0,
+      "actual_test_coverage_pct": 92.8,
+      "average_interval_width_inr": 792.77,
+      "q10_offset": -621.95,
+      "q90_offset": 170.82,
+      "verdict": "Valid Empirical Interval"
+    },
+    "onion_t7": {
+      "commodity": "Onion (Nashik Red)",
+      "horizon": "7-Day Ahead (t+7)",
+      "nominal_coverage_pct": 80.0,
+      "actual_test_coverage_pct": 88.47,
+      "average_interval_width_inr": 795.37,
+      "q10_offset": -671.55,
+      "q90_offset": 123.82,
+      "verdict": "Valid Empirical Interval"
+    }
+  },
+  "top_15_features": {
+    "potato_t1": [
+      {
+        "feature": "rolling_median_7",
+        "gain": 114549504.0,
+        "pct": 29.01
+      },
+      {
+        "feature": "modal_price",
+        "gain": 81731304.0,
+        "pct": 20.7
+      },
+      {
+        "feature": "lag_1",
+        "gain": 52734164.0,
+        "pct": 13.36
+      },
+      {
+        "feature": "rolling_mean_7",
+        "gain": 28470038.0,
+        "pct": 7.21
+      },
+      {
+        "feature": "lag_30",
+        "gain": 22933334.0,
+        "pct": 5.81
+      },
+      {
+        "feature": "rolling_min_7",
+        "gain": 14136336.0,
+        "pct": 3.58
+      },
+      {
+        "feature": "rolling_mean_14",
+        "gain": 8059996.0,
+        "pct": 2.04
+      },
+      {
+        "feature": "benchmark_price",
+        "gain": 6609866.5,
+        "pct": 1.67
+      },
+      {
+        "feature": "rolling_max_7",
+        "gain": 6558757.5,
+        "pct": 1.66
+      },
+      {
+        "feature": "spread_vs_benchmark",
+        "gain": 6536597.0,
+        "pct": 1.66
+      },
+      {
+        "feature": "rolling_median_30",
+        "gain": 5944223.0,
+        "pct": 1.51
+      },
+      {
+        "feature": "max_price",
+        "gain": 5021466.5,
+        "pct": 1.27
+      },
+      {
+        "feature": "pct_spread_vs_benchmark",
+        "gain": 4347346.5,
+        "pct": 1.1
+      },
+      {
+        "feature": "lag_14",
+        "gain": 3649292.75,
+        "pct": 0.92
+      },
+      {
+        "feature": "price_momentum_7",
+        "gain": 3412331.75,
+        "pct": 0.86
+      }
+    ],
+    "potato_t3": [
+      {
+        "feature": "rolling_median_7",
+        "gain": 90893688.0,
+        "pct": 32.26
+      },
+      {
+        "feature": "modal_price",
+        "gain": 55723044.0,
+        "pct": 19.78
+      },
+      {
+        "feature": "is_saturday",
+        "gain": 23044576.0,
+        "pct": 8.18
+      },
+      {
+        "feature": "rolling_mean_7",
+        "gain": 18642912.0,
+        "pct": 6.62
+      },
+      {
+        "feature": "lag_1",
+        "gain": 18534340.0,
+        "pct": 6.58
+      },
+      {
+        "feature": "rolling_std_7",
+        "gain": 6826146.0,
+        "pct": 2.42
+      },
+      {
+        "feature": "rolling_mean_14",
+        "gain": 5107590.0,
+        "pct": 1.81
+      },
+      {
+        "feature": "max_price",
+        "gain": 4056963.0,
+        "pct": 1.44
+      },
+      {
+        "feature": "season_kharif",
+        "gain": 3959640.5,
+        "pct": 1.41
+      },
+      {
+        "feature": "lag_14",
+        "gain": 3543262.25,
+        "pct": 1.26
+      },
+      {
+        "feature": "rolling_mean_30",
+        "gain": 3506042.75,
+        "pct": 1.24
+      },
+      {
+        "feature": "lag_7",
+        "gain": 3504826.25,
+        "pct": 1.24
+      },
+      {
+        "feature": "rolling_min_7",
+        "gain": 3429783.25,
+        "pct": 1.22
+      },
+      {
+        "feature": "market_code",
+        "gain": 3203202.75,
+        "pct": 1.14
+      },
+      {
+        "feature": "min_price",
+        "gain": 2835801.75,
+        "pct": 1.01
+      }
+    ],
+    "potato_t7": [
+      {
+        "feature": "rolling_median_7",
+        "gain": 181714064.0,
+        "pct": 28.24
+      },
+      {
+        "feature": "modal_price",
+        "gain": 148759264.0,
+        "pct": 23.12
+      },
+      {
+        "feature": "lag_1",
+        "gain": 109535744.0,
+        "pct": 17.02
+      },
+      {
+        "feature": "rolling_mean_7",
+        "gain": 44304040.0,
+        "pct": 6.88
+      },
+      {
+        "feature": "min_price",
+        "gain": 21527130.0,
+        "pct": 3.35
+      },
+      {
+        "feature": "rolling_mean_14",
+        "gain": 11053741.0,
+        "pct": 1.72
+      },
+      {
+        "feature": "rolling_min_7",
+        "gain": 8472479.0,
+        "pct": 1.32
+      },
+      {
+        "feature": "lag_3",
+        "gain": 7119424.0,
+        "pct": 1.11
+      },
+      {
+        "feature": "season_rabi",
+        "gain": 6620599.5,
+        "pct": 1.03
+      },
+      {
+        "feature": "day_of_year",
+        "gain": 6589663.5,
+        "pct": 1.02
+      },
+      {
+        "feature": "lag_30",
+        "gain": 6586705.5,
+        "pct": 1.02
+      },
+      {
+        "feature": "week_of_year",
+        "gain": 6531660.0,
+        "pct": 1.02
+      },
+      {
+        "feature": "season_zaid",
+        "gain": 6406134.0,
+        "pct": 1.0
+      },
+      {
+        "feature": "benchmark_price",
+        "gain": 6260777.5,
+        "pct": 0.97
+      },
+      {
+        "feature": "price_return_1d",
+        "gain": 5636965.5,
+        "pct": 0.88
+      }
+    ],
+    "onion_t1": [
+      {
+        "feature": "modal_price",
+        "gain": 329843744.0,
+        "pct": 34.86
+      },
+      {
+        "feature": "max_price",
+        "gain": 213161328.0,
+        "pct": 22.53
+      },
+      {
+        "feature": "lag_1",
+        "gain": 131635656.0,
+        "pct": 13.91
+      },
+      {
+        "feature": "rolling_mean_7",
+        "gain": 129783608.0,
+        "pct": 13.72
+      },
+      {
+        "feature": "benchmark_price",
+        "gain": 15270384.0,
+        "pct": 1.61
+      },
+      {
+        "feature": "rolling_min_7",
+        "gain": 11533687.0,
+        "pct": 1.22
+      },
+      {
+        "feature": "rolling_max_7",
+        "gain": 11099539.0,
+        "pct": 1.17
+      },
+      {
+        "feature": "sin_day_of_year",
+        "gain": 7594141.0,
+        "pct": 0.8
+      },
+      {
+        "feature": "day_of_year",
+        "gain": 6398681.0,
+        "pct": 0.68
+      },
+      {
+        "feature": "season_rabi",
+        "gain": 5979034.0,
+        "pct": 0.63
+      },
+      {
+        "feature": "lag_30",
+        "gain": 5860399.0,
+        "pct": 0.62
+      },
+      {
+        "feature": "week_of_year",
+        "gain": 4747665.0,
+        "pct": 0.5
+      },
+      {
+        "feature": "rolling_mean_14",
+        "gain": 4694631.5,
+        "pct": 0.5
+      },
+      {
+        "feature": "month",
+        "gain": 4643015.5,
+        "pct": 0.49
+      },
+      {
+        "feature": "price_momentum_7",
+        "gain": 4478715.0,
+        "pct": 0.47
+      }
+    ],
+    "onion_t3": [
+      {
+        "feature": "modal_price",
+        "gain": 203478912.0,
+        "pct": 48.5
+      },
+      {
+        "feature": "lag_1",
+        "gain": 36533128.0,
+        "pct": 8.71
+      },
+      {
+        "feature": "month",
+        "gain": 31288062.0,
+        "pct": 7.46
+      },
+      {
+        "feature": "benchmark_price",
+        "gain": 18331658.0,
+        "pct": 4.37
+      },
+      {
+        "feature": "week_of_year",
+        "gain": 15606254.0,
+        "pct": 3.72
+      },
+      {
+        "feature": "rolling_mean_7",
+        "gain": 9440448.0,
+        "pct": 2.25
+      },
+      {
+        "feature": "sin_day_of_year",
+        "gain": 8947048.0,
+        "pct": 2.13
+      },
+      {
+        "feature": "cos_month",
+        "gain": 8418937.0,
+        "pct": 2.01
+      },
+      {
+        "feature": "cos_day_of_year",
+        "gain": 7144724.5,
+        "pct": 1.7
+      },
+      {
+        "feature": "day_of_year",
+        "gain": 6141072.5,
+        "pct": 1.46
+      },
+      {
+        "feature": "rolling_min_7",
+        "gain": 6022137.5,
+        "pct": 1.44
+      },
+      {
+        "feature": "sin_month",
+        "gain": 4710343.0,
+        "pct": 1.12
+      },
+      {
+        "feature": "rolling_max_7",
+        "gain": 4165452.75,
+        "pct": 0.99
+      },
+      {
+        "feature": "season_rabi",
+        "gain": 4153454.0,
+        "pct": 0.99
+      },
+      {
+        "feature": "lag_30",
+        "gain": 3391485.5,
+        "pct": 0.81
+      }
+    ],
+    "onion_t7": [
+      {
+        "feature": "benchmark_price",
+        "gain": 282820800.0,
+        "pct": 46.36
+      },
+      {
+        "feature": "modal_price",
+        "gain": 55892468.0,
+        "pct": 9.16
+      },
+      {
+        "feature": "sin_day_of_year",
+        "gain": 29248856.0,
+        "pct": 4.79
+      },
+      {
+        "feature": "rolling_mean_7",
+        "gain": 20816066.0,
+        "pct": 3.41
+      },
+      {
+        "feature": "lag_1",
+        "gain": 20383654.0,
+        "pct": 3.34
+      },
+      {
+        "feature": "rolling_min_7",
+        "gain": 17479478.0,
+        "pct": 2.87
+      },
+      {
+        "feature": "cos_day_of_year",
+        "gain": 14217387.0,
+        "pct": 2.33
+      },
+      {
+        "feature": "sin_month",
+        "gain": 13961933.0,
+        "pct": 2.29
+      },
+      {
+        "feature": "week_of_year",
+        "gain": 13719492.0,
+        "pct": 2.25
+      },
+      {
+        "feature": "pct_spread_vs_benchmark",
+        "gain": 11505457.0,
+        "pct": 1.89
+      },
+      {
+        "feature": "day_of_year",
+        "gain": 10221722.0,
+        "pct": 1.68
+      },
+      {
+        "feature": "season_rabi",
+        "gain": 8848190.0,
+        "pct": 1.45
+      },
+      {
+        "feature": "rolling_max_7",
+        "gain": 8243237.5,
+        "pct": 1.35
+      },
+      {
+        "feature": "cos_month",
+        "gain": 7872282.0,
+        "pct": 1.29
+      },
+      {
+        "feature": "month",
+        "gain": 7359586.5,
+        "pct": 1.21
+      }
+    ]
+  },
+  "artifact_verification": {
+    "potato_t1": {
+      "artifact_exists": true,
+      "can_load": true,
+      "model_sha256": "b64f940819216c1f01ab771afd7c7fd91a8c3ea27dd6616dc7d6af90b7d732d7",
+      "feature_count": 39,
+      "has_metadata": true,
+      "train_range": "2023-06-06 to 2024-12-31",
+      "val_range": "2025-01-01 to 2025-03-31",
+      "test_range": "2025-04-01 to 2025-06-11"
+    },
+    "potato_t3": {
+      "artifact_exists": true,
+      "can_load": true,
+      "model_sha256": "703b4b056d8fd0edda72ef8f332750e54ea7c4e2bcbc5c7ff5166bcf8b3013cf",
+      "feature_count": 39,
+      "has_metadata": true,
+      "train_range": "2023-06-06 to 2024-12-31",
+      "val_range": "2025-01-01 to 2025-03-31",
+      "test_range": "2025-04-01 to 2025-06-11"
+    },
+    "potato_t7": {
+      "artifact_exists": true,
+      "can_load": true,
+      "model_sha256": "e1c7c5e426f6dbd694f1aa5729238963d79284f0a7f7c27eb930a58e7f90e614",
+      "feature_count": 39,
+      "has_metadata": true,
+      "train_range": "2023-06-06 to 2024-12-31",
+      "val_range": "2025-01-01 to 2025-03-31",
+      "test_range": "2025-04-01 to 2025-06-11"
+    },
+    "onion_t1": {
+      "artifact_exists": true,
+      "can_load": true,
+      "model_sha256": "28449de1b5c64ccdf05decebaf07b2e96d50fb90bb5bb7d6eb69b0ba0eafc57d",
+      "feature_count": 39,
+      "has_metadata": true,
+      "train_range": "2023-06-06 to 2024-12-31",
+      "val_range": "2025-01-01 to 2025-03-31",
+      "test_range": "2025-04-01 to 2025-06-11"
+    },
+    "onion_t3": {
+      "artifact_exists": true,
+      "can_load": true,
+      "model_sha256": "c1f7d8dceb76a442e9b94a0948dee34b898a67222d9354dcf3fa31e245bab097",
+      "feature_count": 39,
+      "has_metadata": true,
+      "train_range": "2023-06-06 to 2024-12-31",
+      "val_range": "2025-01-01 to 2025-03-31",
+      "test_range": "2025-04-01 to 2025-06-11"
+    },
+    "onion_t7": {
+      "artifact_exists": true,
+      "can_load": true,
+      "model_sha256": "14acbacf1e0cdc92f3a24d54dbcaff743d94f766b993df647e80a886627f21ab",
+      "feature_count": 39,
+      "has_metadata": true,
+      "train_range": "2023-06-06 to 2024-12-31",
+      "val_range": "2025-01-01 to 2025-03-31",
+      "test_range": "2025-04-01 to 2025-06-11"
+    },
+    "wheat_t1": {
+      "artifact_exists": true,
+      "can_load": true,
+      "model_sha256": "463cb0d626f403d914abec88d78d2ecfa688e5fdbc2adc77aa6c36b15996500b",
+      "feature_count": 39,
+      "has_metadata": true,
+      "train_range": "2023-06-06 to 2024-12-31",
+      "val_range": "2025-01-01 to 2025-03-31",
+      "test_range": "2025-04-01 to 2025-06-11"
+    },
+    "wheat_t3": {
+      "artifact_exists": true,
+      "can_load": true,
+      "model_sha256": "63caf49cfdc8b04e50fd41661a68659f8323c68de91a012716c5dfeef98d7a59",
+      "feature_count": 39,
+      "has_metadata": true,
+      "train_range": "2023-06-06 to 2024-12-31",
+      "val_range": "2025-01-01 to 2025-03-31",
+      "test_range": "2025-04-01 to 2025-06-11"
+    },
+    "wheat_t7": {
+      "artifact_exists": true,
+      "can_load": true,
+      "model_sha256": "3b7830193cc9c4358791a1cc8473b651dd0180b449b3c441f6ef4a0b924e8447",
+      "feature_count": 39,
+      "has_metadata": true,
+      "train_range": "2023-06-06 to 2024-12-31",
+      "val_range": "2025-01-01 to 2025-03-31",
+      "test_range": "2025-04-01 to 2025-06-11"
+    },
+    "tomato_t1": {
+      "artifact_exists": true,
+      "can_load": true,
+      "model_sha256": "bb1d9b2805e7cfb2a0a5bc12116b299bf791a8a1dc4595147ca2681bb20dcfbf",
+      "feature_count": 39,
+      "has_metadata": true,
+      "train_range": "2023-06-06 to 2024-12-31",
+      "val_range": "2025-01-01 to 2025-03-31",
+      "test_range": "2025-04-01 to 2025-06-11"
+    },
+    "tomato_t3": {
+      "artifact_exists": true,
+      "can_load": true,
+      "model_sha256": "f3b03bdc3cfcaef4cadf0336c49397e43fa3c87f98827da7ff3cda5915beb278",
+      "feature_count": 39,
+      "has_metadata": true,
+      "train_range": "2023-06-06 to 2024-12-31",
+      "val_range": "2025-01-01 to 2025-03-31",
+      "test_range": "2025-04-01 to 2025-06-11"
+    },
+    "tomato_t7": {
+      "artifact_exists": true,
+      "can_load": true,
+      "model_sha256": "3cac72b3194d4324e2835f85ea87f08e598ac333807ccdbb69a8b07debd61266",
+      "feature_count": 39,
+      "has_metadata": true,
+      "train_range": "2023-06-06 to 2024-12-31",
+      "val_range": "2025-01-01 to 2025-03-31",
+      "test_range": "2025-04-01 to 2025-06-11"
+    }
+  }
+}

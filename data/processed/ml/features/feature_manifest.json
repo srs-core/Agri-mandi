@@ -1,0 +1,106 @@
+{
+  "pipeline_version": "2.0.0",
+  "pipeline_execution_timestamp": "2026-08-29T15:51:39.870836",
+  "input_dataset": {
+    "path": "data\\processed\\ml\\filtered_market_data.csv",
+    "total_records_loaded": 51813,
+    "provenance": "Clean Processed Agmarknet Historical Data (Step 1 Output)"
+  },
+  "output_feature_datasets": {
+    "potato_features": {
+      "path": "data\\processed\\ml\\features\\potato_features.csv",
+      "file_size_bytes": 4731582,
+      "sha256": "6c04ba1f81350d1a0cbba8c955251f83b9ddf497aaf18d89dae07e4ca98165a6",
+      "feature_rows": 12363,
+      "series_count": 37,
+      "tier": "TIER_1"
+    },
+    "onion_features": {
+      "path": "data\\processed\\ml\\features\\onion_features.csv",
+      "file_size_bytes": 8975015,
+      "sha256": "2b356a071837d458cf9f4dbb0136fcf1291b18f59abc6f79995548f8f2d0f1df",
+      "feature_rows": 22714,
+      "series_count": 126,
+      "tier": "TIER_1"
+    },
+    "wheat_features": {
+      "path": "data\\processed\\ml\\features\\wheat_features.csv",
+      "file_size_bytes": 2278128,
+      "sha256": "c1a14aa944076c7ef83e86ed0180174fb8e149b74acbf758abff34aec5ef6977",
+      "feature_rows": 5825,
+      "series_count": 88,
+      "tier": "TIER_2"
+    },
+    "tomato_features": {
+      "path": "data\\processed\\ml\\features\\tomato_features.csv",
+      "file_size_bytes": 256634,
+      "sha256": "1137442c4ced9d827adb583130de129710c2b9683648f86b3905f06d60278256",
+      "feature_rows": 690,
+      "series_count": 35,
+      "tier": "TIER_2"
+    }
+  },
+  "chronological_split_rules": {
+    "train_period": "2023-06-06 to 2024-12-31 (~19 months)",
+    "validation_period": "2025-01-01 to 2025-03-31 (Q1 2025)",
+    "test_period": "2025-04-01 to 2025-06-11 (Q2 2025)"
+  },
+  "leakage_safety_rules_enforced": [
+    "Lags strictly use prior trading sessions (t-1, t-3, t-7, t-14, t-30)",
+    "Rolling statistics strictly use historical observations up to t",
+    "Benchmark spatial features strictly use benchmark prices on or before date t",
+    "Target variables (t+1, t+3, t+7) are strictly forward-looking and separate from feature columns",
+    "Warmup window (30 observations) dropped to ensure 100% complete feature matrices without future back-filling"
+  ],
+  "feature_definitions": {
+    "target_variables": {
+      "target_price_t1": "Next observed trading day modal price (t+1)",
+      "target_price_t3": "3 trading days ahead modal price (t+3)",
+      "target_price_t7": "7 trading days ahead modal price (t+7)",
+      "target_return_t1": "Percentage price return from t to t+1: (P_{t+1} - P_t) / P_t"
+    },
+    "lag_features": {
+      "lag_1": "Modal price at previous trading session (t-1)",
+      "lag_3": "Modal price at 3rd prior trading session (t-3)",
+      "lag_7": "Modal price at 7th prior trading session (t-7)",
+      "lag_14": "Modal price at 14th prior trading session (t-14)",
+      "lag_30": "Modal price at 30th prior trading session (t-30)",
+      "days_since_last_trade": "Calendar days elapsed between current session t and prior session t-1"
+    },
+    "rolling_window_features": {
+      "rolling_mean_7": "7-trading-session moving average modal price",
+      "rolling_mean_14": "14-trading-session moving average modal price",
+      "rolling_mean_30": "30-trading-session moving average modal price",
+      "rolling_median_7": "7-trading-session median modal price",
+      "rolling_median_30": "30-trading-session median modal price",
+      "rolling_std_7": "7-trading-session sample standard deviation",
+      "rolling_std_30": "30-trading-session sample standard deviation",
+      "rolling_min_7": "7-trading-session minimum modal price",
+      "rolling_max_7": "7-trading-session maximum modal price",
+      "price_momentum_7": "(P_t - rolling_mean_7) / rolling_mean_7",
+      "price_return_1d": "(P_t - lag_1) / lag_1",
+      "price_volatility_30": "rolling_std_30 / rolling_mean_30",
+      "daily_spread_pct": "(max_price_t - min_price_t) / modal_price_t"
+    },
+    "temporal_cyclical_features": {
+      "day_of_week": "Integer day of week (0=Monday ... 6=Sunday)",
+      "month": "Calendar month (1..12)",
+      "day_of_year": "Day of calendar year (1..366)",
+      "week_of_year": "ISO calendar week (1..53)",
+      "sin_day_of_year": "sin(2 * pi * day_of_year / 365.25)",
+      "cos_day_of_year": "cos(2 * pi * day_of_year / 365.25)",
+      "sin_month": "sin(2 * pi * month / 12)",
+      "cos_month": "cos(2 * pi * month / 12)",
+      "is_monday": "Binary flag for Monday auction (weekend backlog)",
+      "is_saturday": "Binary flag for Saturday auction",
+      "season_kharif": "Binary flag for Kharif monsoon harvest (July-October)",
+      "season_rabi": "Binary flag for Rabi winter harvest (November-February)",
+      "season_zaid": "Binary flag for Zaid summer season (March-June)"
+    },
+    "spatial_benchmark_features": {
+      "benchmark_price": "Modal price at designated primary regional benchmark APMC at date t",
+      "spread_vs_benchmark": "Price differential: P_{market, t} - P_{benchmark, t}",
+      "pct_spread_vs_benchmark": "(P_{market, t} - P_{benchmark, t}) / P_{benchmark, t}"
+    }
+  }
+}

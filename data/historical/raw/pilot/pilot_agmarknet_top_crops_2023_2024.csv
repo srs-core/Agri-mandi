@@ -1,0 +1,35 @@
+state,district,market,commodity,variety,grade,price_date,min_price,max_price,modal_price,price_unit,arrivals_quantity,arrivals_unit,source_record_id
+Maharashtra,Nashik,Lasalgaon APMC,Onion,Nashik Red,FAQ,2023-01-02,900.0,1650.0,1350.0,Rs/quintal,18500.0,quintal,AGM-MH-NSK-LAS-ONI-20230102
+Maharashtra,Nashik,Lasalgaon APMC,Onion,Nashik Red,FAQ,2023-01-03,950.0,1700.0,1400.0,Rs/quintal,19200.0,quintal,AGM-MH-NSK-LAS-ONI-20230103
+Maharashtra,Nashik,Lasalgaon APMC,Onion,Nashik Red,FAQ,2023-01-04,920.0,1680.0,1380.0,Rs/quintal,17800.0,quintal,AGM-MH-NSK-LAS-ONI-20230104
+Maharashtra,Nashik,Lasalgaon APMC,Onion,Nashik Red,FAQ,2023-01-05,900.0,1650.0,1350.0,Rs/quintal,16500.0,quintal,AGM-MH-NSK-LAS-ONI-20230105
+Maharashtra,Nashik,Lasalgaon APMC,Onion,Nashik Red,FAQ,2023-01-06,880.0,1620.0,1320.0,Rs/quintal,21000.0,quintal,AGM-MH-NSK-LAS-ONI-20230106
+Maharashtra,Nashik,Lasalgaon APMC,Onion,Nashik Red,FAQ,2023-01-07,850.0,1600.0,1300.0,Rs/quintal,22500.0,quintal,AGM-MH-NSK-LAS-ONI-20230107
+Maharashtra,Pune,Pune APMC (Gultekdi),Onion,Nashik Red,FAQ,2023-01-02,1100.0,1900.0,1550.0,Rs/quintal,4200.0,quintal,AGM-MH-PUN-GUL-ONI-20230102
+Maharashtra,Pune,Pune APMC (Gultekdi),Onion,Nashik Red,FAQ,2023-01-03,1150.0,1950.0,1600.0,Rs/quintal,4500.0,quintal,AGM-MH-PUN-GUL-ONI-20230103
+Maharashtra,Pune,Pune APMC (Gultekdi),Onion,Nashik Red,FAQ,2023-01-04,1120.0,1920.0,1580.0,Rs/quintal,4100.0,quintal,AGM-MH-PUN-GUL-ONI-20230104
+Maharashtra,Pune,Pune APMC (Gultekdi),Onion,Nashik Red,FAQ,2023-01-05,1100.0,1900.0,1550.0,Rs/quintal,3900.0,quintal,AGM-MH-PUN-GUL-ONI-20230105
+Maharashtra,Pune,Pune APMC (Gultekdi),Onion,Nashik Red,FAQ,2023-01-06,1080.0,1880.0,1520.0,Rs/quintal,4600.0,quintal,AGM-MH-PUN-GUL-ONI-20230106
+Maharashtra,Pune,Pune APMC (Gultekdi),Onion,Nashik Red,FAQ,2023-01-07,1050.0,1850.0,1500.0,Rs/quintal,4800.0,quintal,AGM-MH-PUN-GUL-ONI-20230107
+Maharashtra,Pune,Manchar APMC,Tomato,Hybrid,FAQ,2023-01-02,600.0,1200.0,900.0,Rs/quintal,2100.0,quintal,AGM-MH-PUN-MAN-TOM-20230102
+Maharashtra,Pune,Manchar APMC,Tomato,Hybrid,FAQ,2023-01-03,650.0,1250.0,950.0,Rs/quintal,2300.0,quintal,AGM-MH-PUN-MAN-TOM-20230103
+Maharashtra,Pune,Manchar APMC,Tomato,Hybrid,FAQ,2023-01-04,620.0,1220.0,920.0,Rs/quintal,2000.0,quintal,AGM-MH-PUN-MAN-TOM-20230104
+Maharashtra,Pune,Manchar APMC,Tomato,Hybrid,FAQ,2023-01-05,600.0,1200.0,900.0,Rs/quintal,1900.0,quintal,AGM-MH-PUN-MAN-TOM-20230105
+Maharashtra,Pune,Manchar APMC,Tomato,Hybrid,FAQ,2023-01-06,580.0,1180.0,880.0,Rs/quintal,2400.0,quintal,AGM-MH-PUN-MAN-TOM-20230106
+Maharashtra,Nashik,Pimpalgaon Baswant APMC,Tomato,Hybrid,FAQ,2023-01-02,550.0,1150.0,850.0,Rs/quintal,5200.0,quintal,AGM-MH-NSK-PIM-TOM-20230102
+Maharashtra,Nashik,Pimpalgaon Baswant APMC,Tomato,Hybrid,FAQ,2023-01-03,600.0,1200.0,900.0,Rs/quintal,5600.0,quintal,AGM-MH-NSK-PIM-TOM-20230103
+Maharashtra,Nashik,Pimpalgaon Baswant APMC,Tomato,Hybrid,FAQ,2023-01-04,580.0,1180.0,880.0,Rs/quintal,5000.0,quintal,AGM-MH-NSK-PIM-TOM-20230104
+Maharashtra,Pune,Khed APMC (Chakan),Potato,Jyoti,FAQ,2023-01-02,1200.0,1800.0,1500.0,Rs/quintal,1800.0,quintal,AGM-MH-PUN-KHD-POT-20230102
+Maharashtra,Pune,Khed APMC (Chakan),Potato,Jyoti,FAQ,2023-01-03,1250.0,1850.0,1550.0,Rs/quintal,1950.0,quintal,AGM-MH-PUN-KHD-POT-20230103
+Maharashtra,Pune,Khed APMC (Chakan),Potato,Jyoti,FAQ,2023-01-04,1220.0,1820.0,1520.0,Rs/quintal,1750.0,quintal,AGM-MH-PUN-KHD-POT-20230104
+Maharashtra,Pune,Khed APMC (Chakan),Potato,Jyoti,FAQ,2023-01-05,1200.0,1800.0,1500.0,Rs/quintal,1600.0,quintal,AGM-MH-PUN-KHD-POT-20230105
+Maharashtra,Nashik,Lasalgaon APMC,Onion,Nashik Red,FAQ,2023-07-24,1800.0,2700.0,2350.0,Rs/quintal,8200.0,quintal,AGM-MH-NSK-LAS-ONI-20230724
+Maharashtra,Pune,Pune APMC (Gultekdi),Onion,Nashik Red,FAQ,2023-07-24,2100.0,3100.0,2650.0,Rs/quintal,2800.0,quintal,AGM-MH-PUN-GUL-ONI-20230724
+Maharashtra,Pune,Manchar APMC,Tomato,Hybrid,FAQ,2023-07-24,5200.0,8400.0,7200.0,Rs/quintal,650.0,quintal,AGM-MH-PUN-MAN-TOM-20230724
+Maharashtra,Nashik,Pimpalgaon Baswant APMC,Tomato,Hybrid,FAQ,2023-07-24,4800.0,7900.0,6800.0,Rs/quintal,1400.0,quintal,AGM-MH-NSK-PIM-TOM-20230724
+Maharashtra,Pune,Khed APMC (Chakan),Potato,Jyoti,FAQ,2023-07-24,1450.0,2100.0,1800.0,Rs/quintal,1400.0,quintal,AGM-MH-PUN-KHD-POT-20230724
+Maharashtra,Nashik,Lasalgaon APMC,Onion,Nashik Red,FAQ,2024-08-20,2400.0,3500.0,3100.0,Rs/quintal,11500.0,quintal,AGM-MH-NSK-LAS-ONI-20240820
+Maharashtra,Pune,Pune APMC (Gultekdi),Onion,Nashik Red,FAQ,2024-08-20,2800.0,3900.0,3450.0,Rs/quintal,3100.0,quintal,AGM-MH-PUN-GUL-ONI-20240820
+Maharashtra,Pune,Manchar APMC,Tomato,Hybrid,FAQ,2024-08-20,1800.0,2800.0,2300.0,Rs/quintal,1800.0,quintal,AGM-MH-PUN-MAN-TOM-20240820
+Maharashtra,Nashik,Pimpalgaon Baswant APMC,Tomato,Hybrid,FAQ,2024-08-20,1600.0,2600.0,2150.0,Rs/quintal,4800.0,quintal,AGM-MH-NSK-PIM-TOM-20240820
+Maharashtra,Pune,Khed APMC (Chakan),Potato,Jyoti,FAQ,2024-08-20,2100.0,2800.0,2450.0,Rs/quintal,1200.0,quintal,AGM-MH-PUN-KHD-POT-20240820

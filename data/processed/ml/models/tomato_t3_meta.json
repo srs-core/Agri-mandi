@@ -1,0 +1,141 @@
+{
+  "commodity": "Tomato (Hybrid)",
+  "commodity_slug": "tomato",
+  "horizon": "t3",
+  "target_column": "target_price_t3",
+  "model_type": "XGBoost Regressor (Tuned)",
+  "model_file": "tomato_t3_xgb.json",
+  "model_sha256": "f3b03bdc3cfcaef4cadf0336c49397e43fa3c87f98827da7ff3cda5915beb278",
+  "created_at": "2026-08-29T16:04:36.772064",
+  "random_seed": 42,
+  "best_hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 5,
+    "learning_rate": 0.05
+  },
+  "dataset_split_counts": {
+    "train_samples": 585,
+    "val_samples": 0,
+    "test_samples": 0
+  },
+  "performance_metrics": {
+    "baseline": {
+      "train": {
+        "mae": 1381.84,
+        "rmse": 2519.93,
+        "mape": 52.63,
+        "r2": 0.4491,
+        "count": 585
+      },
+      "val": {},
+      "test": {}
+    },
+    "xgboost": {
+      "train": {
+        "mae": 506.93,
+        "rmse": 756.64,
+        "mape": 14.23,
+        "r2": 0.9503,
+        "count": 585
+      },
+      "val": {},
+      "test": {}
+    },
+    "test_improvement_over_baseline": {
+      "mae_reduction_pct": 0.0,
+      "rmse_reduction_pct": 0.0
+    }
+  },
+  "uncertainty_parameters": {
+    "method": "none",
+    "reason": "no_validation_set"
+  },
+  "top_10_features": [
+    {
+      "feature": "sin_day_of_year",
+      "raw_gain": 273427808.0,
+      "normalized_gain_pct": 31.59
+    },
+    {
+      "feature": "day_of_year",
+      "raw_gain": 119078512.0,
+      "normalized_gain_pct": 13.76
+    },
+    {
+      "feature": "rolling_min_7",
+      "raw_gain": 73216344.0,
+      "normalized_gain_pct": 8.46
+    },
+    {
+      "feature": "rolling_max_7",
+      "raw_gain": 39344880.0,
+      "normalized_gain_pct": 4.55
+    },
+    {
+      "feature": "rolling_mean_7",
+      "raw_gain": 37529732.0,
+      "normalized_gain_pct": 4.34
+    },
+    {
+      "feature": "rolling_median_7",
+      "raw_gain": 34839620.0,
+      "normalized_gain_pct": 4.03
+    },
+    {
+      "feature": "modal_price",
+      "raw_gain": 26370970.0,
+      "normalized_gain_pct": 3.05
+    },
+    {
+      "feature": "max_price",
+      "raw_gain": 22309858.0,
+      "normalized_gain_pct": 2.58
+    },
+    {
+      "feature": "rolling_mean_14",
+      "raw_gain": 21664930.0,
+      "normalized_gain_pct": 2.5
+    },
+    {
+      "feature": "lag_7",
+      "raw_gain": 18825948.0,
+      "normalized_gain_pct": 2.18
+    }
+  ],
+  "market_encoding": {
+    "Ahmednagar APMC": 1,
+    "Amravati APMC": 2,
+    "Bhusaval APMC": 3,
+    "Chandrapur(Ganjwad) APMC": 4,
+    "Chandvad APMC": 5,
+    "Islampur APMC": 6,
+    "Jalgaon APMC": 7,
+    "Junnar APMC (Narayangaon Sub-yard)": 8,
+    "Kalmeshwar APMC": 9,
+    "Kamthi APMC": 10,
+    "Karad APMC": 11,
+    "Khed APMC (Chakan Yard)": 12,
+    "Kolhapur APMC": 13,
+    "Mangal Wedha APMC": 14,
+    "Mumbai APMC": 15,
+    "Nagpur APMC": 16,
+    "Navapur APMC": 17,
+    "Panvel APMC": 18,
+    "Phaltan APMC": 19,
+    "Pimpalgaon Baswant APMC": 20,
+    "Pune APMC (Gultekdi)": 21,
+    "Pune APMC (Khadki Sub-yard)": 22,
+    "Pune APMC (Manjri Sub-yard)": 23,
+    "Pune APMC (Moshi Sub-yard)": 24,
+    "Rahata APMC": 25,
+    "Rahuri APMC": 26,
+    "Ramtek APMC": 27,
+    "Ratnagiri (Nachane) APMC": 28,
+    "Sangamner APMC": 29,
+    "Satara APMC": 30,
+    "Shrirampur APMC": 31,
+    "Solapur APMC": 32,
+    "Vadgaonpeth APMC": 33,
+    "Vai APMC": 34
+  }
+}

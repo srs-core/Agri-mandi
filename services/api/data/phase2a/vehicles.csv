@@ -1,0 +1,6 @@
+﻿vehicle_external_id,vehicle_type,capacity_tonnes,refrigerated,evidence_or_use,availability_context,cost_status,source
+VH-REF-001,Carriage-type three wheeler / transport van,Up to 3,No,NHB historical specialized-transport example,10–20 acre project example,Historical benchmark — not current Pune market rate,NHB horticulture guideline
+VH-REF-002,Transport vehicle,>3,Depends,NHB guideline category,Project-dependent,Historical / categorical only,NHB horticulture guideline
+VH-REF-003,Refrigerated truck / reefer,TBD,Yes,Cold-chain shipment,TBD,Current rate to be researched,Team logistics summary
+VH-REF-004,Mini truck / pickup,TBD,Usually no,Small farm pickups,TBD,Current rate to be researched,Team logistics summary
+VH-REF-005,Medium truck,TBD,Usually no,Aggregated farm loads,TBD,Current rate to be researched,Team logistics summary

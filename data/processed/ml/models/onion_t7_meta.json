@@ -1,0 +1,226 @@
+{
+  "commodity": "Onion (Nashik Red)",
+  "commodity_slug": "onion",
+  "horizon": "t7",
+  "target_column": "target_price_t7",
+  "model_type": "XGBoost Regressor (Tuned)",
+  "model_file": "onion_t7_xgb.json",
+  "model_sha256": "14acbacf1e0cdc92f3a24d54dbcaff743d94f766b993df647e80a886627f21ab",
+  "created_at": "2026-08-29T16:04:35.885023",
+  "random_seed": 42,
+  "best_hyperparameters": {
+    "n_estimators": 200,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "reg_alpha": 1.0,
+    "reg_lambda": 2.0
+  },
+  "dataset_split_counts": {
+    "train_samples": 17198,
+    "val_samples": 2158,
+    "test_samples": 2489
+  },
+  "performance_metrics": {
+    "baseline": {
+      "train": {
+        "mae": 523.6,
+        "rmse": 833.43,
+        "mape": 24.93,
+        "r2": 0.4822,
+        "count": 17198
+      },
+      "val": {
+        "mae": 336.68,
+        "rmse": 455.01,
+        "mape": 24.38,
+        "r2": 0.1471,
+        "count": 2158
+      },
+      "test": {
+        "mae": 156.51,
+        "rmse": 295.21,
+        "mape": 14.33,
+        "r2": 0.0109,
+        "count": 2489
+      }
+    },
+    "xgboost": {
+      "train": {
+        "mae": 254.39,
+        "rmse": 378.45,
+        "mape": 12.86,
+        "r2": 0.8932,
+        "count": 17198
+      },
+      "val": {
+        "mae": 344.6,
+        "rmse": 441.91,
+        "mape": 25.99,
+        "r2": 0.1955,
+        "count": 2158
+      },
+      "test": {
+        "mae": 391.03,
+        "rmse": 472.35,
+        "mape": 39.14,
+        "r2": -1.5323,
+        "count": 2489
+      }
+    },
+    "test_improvement_over_baseline": {
+      "mae_reduction_pct": -149.84,
+      "rmse_reduction_pct": -60.0
+    }
+  },
+  "uncertainty_parameters": {
+    "method": "empirical_validation_residuals",
+    "confidence_level": "80% empirical prediction interval",
+    "residual_q10": -671.55,
+    "residual_q50": -260.51,
+    "residual_q90": 123.82,
+    "formula": "predicted_price + [residual_q10, residual_q90]"
+  },
+  "top_10_features": [
+    {
+      "feature": "benchmark_price",
+      "raw_gain": 282820800.0,
+      "normalized_gain_pct": 46.36
+    },
+    {
+      "feature": "modal_price",
+      "raw_gain": 55892468.0,
+      "normalized_gain_pct": 9.16
+    },
+    {
+      "feature": "sin_day_of_year",
+      "raw_gain": 29248856.0,
+      "normalized_gain_pct": 4.79
+    },
+    {
+      "feature": "rolling_mean_7",
+      "raw_gain": 20816066.0,
+      "normalized_gain_pct": 3.41
+    },
+    {
+      "feature": "lag_1",
+      "raw_gain": 20383654.0,
+      "normalized_gain_pct": 3.34
+    },
+    {
+      "feature": "rolling_min_7",
+      "raw_gain": 17479478.0,
+      "normalized_gain_pct": 2.87
+    },
+    {
+      "feature": "cos_day_of_year",
+      "raw_gain": 14217387.0,
+      "normalized_gain_pct": 2.33
+    },
+    {
+      "feature": "sin_month",
+      "raw_gain": 13961933.0,
+      "normalized_gain_pct": 2.29
+    },
+    {
+      "feature": "week_of_year",
+      "raw_gain": 13719492.0,
+      "normalized_gain_pct": 2.25
+    },
+    {
+      "feature": "pct_spread_vs_benchmark",
+      "raw_gain": 11505457.0,
+      "normalized_gain_pct": 1.89
+    }
+  ],
+  "market_encoding": {
+    "Ahmednagar APMC": 1,
+    "Akluj APMC": 2,
+    "Akola APMC": 3,
+    "Akole APMC": 4,
+    "Amravati APMC": 5,
+    "Baramati APMC": 6,
+    "Bhusaval APMC": 7,
+    "Chandrapur(Ganjwad) APMC": 8,
+    "Chandvad APMC": 9,
+    "Devala APMC": 10,
+    "Dhule APMC": 11,
+    "Dindori APMC": 12,
+    "Dindori(Vani) APMC": 13,
+    "Hingna APMC": 14,
+    "Indapur APMC": 15,
+    "Islampur APMC": 16,
+    "Jalgaon APMC": 17,
+    "Jamkhed APMC": 18,
+    "Junnar APMC": 19,
+    "Junnar APMC (Alephata Sub-yard)": 20,
+    "Junnar APMC (Narayangaon Sub-yard)": 21,
+    "Junnar APMC (Otur Sub-yard)": 22,
+    "Kada APMC": 23,
+    "Kalvan APMC": 24,
+    "Kalyan APMC": 25,
+    "Kamthi APMC": 26,
+    "Karad APMC": 27,
+    "Karjat APMC": 28,
+    "Karjat(Raigad) APMC": 29,
+    "Khed APMC (Chakan Yard)": 30,
+    "Kolhapur APMC": 31,
+    "Kopargaon APMC": 32,
+    "Kurdwadi(Modnimb) APMC": 33,
+    "Lasalgaon APMC": 34,
+    "Lasalgaon(Vinchur) APMC": 35,
+    "Laxmi Sopan Agriculture Produce Marketing Co Ltd APMC": 36,
+    "Lonand APMC": 37,
+    "Malharshree Farmers Producer Co Ltd APMC": 38,
+    "Manchar APMC": 39,
+    "Mangal Wedha APMC": 40,
+    "Mankamneshwar Farmar Producer Coltd Sanchalit Mank APMC": 41,
+    "Manmad APMC": 42,
+    "Nagpur APMC": 43,
+    "Nampur APMC": 44,
+    "Nandgaon APMC": 45,
+    "Nandurbar APMC": 46,
+    "Nashik APMC": 47,
+    "Navapur APMC": 48,
+    "Newasa(Ghodegaon) APMC": 49,
+    "Om Chaitanya Multistate Agro Purpose Coop Society APMC": 50,
+    "Pandharpur APMC": 51,
+    "Parner APMC": 52,
+    "Pathardi APMC": 53,
+    "Pen APMC": 54,
+    "Phaltan APMC": 55,
+    "Pimpalgaon Baswant APMC": 56,
+    "Pimpalgaon Baswant(Saykheda) APMC": 57,
+    "Pune APMC (Gultekdi)": 58,
+    "Pune APMC (Khadki Sub-yard)": 59,
+    "Pune APMC (Manjri Sub-yard)": 60,
+    "Pune APMC (Moshi Sub-yard)": 61,
+    "Pune APMC (Pimpri Sub-yard)": 62,
+    "Rahata APMC": 63,
+    "Rahuri APMC": 64,
+    "Rahuri(Vambori) APMC": 65,
+    "Ramtek APMC": 66,
+    "Sakri APMC": 67,
+    "Sangamner APMC": 68,
+    "Sangli(Phale, Bhajipura Market) APMC": 69,
+    "Satana APMC": 70,
+    "Satara APMC": 71,
+    "Shevgaon APMC": 72,
+    "Shirpur APMC": 73,
+    "Shivsiddha Govind Producer Company Limited Sanchal APMC": 74,
+    "Shree Rameshwar Krushi Market APMC": 75,
+    "Shree Sairaj Krushi Market APMC": 76,
+    "Shrigonda APMC": 77,
+    "Shrirampur APMC": 78,
+    "Sinner APMC": 79,
+    "Solapur APMC": 80,
+    "Umrane APMC": 81,
+    "Vadgaonpeth APMC": 82,
+    "Vai APMC": 83,
+    "Vashi APMC (Mumbai)": 84,
+    "Vita APMC": 85,
+    "Yawal APMC": 86,
+    "Yeola APMC": 87
+  }
+}

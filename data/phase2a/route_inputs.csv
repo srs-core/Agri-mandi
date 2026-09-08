@@ -1,0 +1,4 @@
+﻿Route_ID,Origin_Type,Origin,Destination_Type,Destination,Distance_Km,Travel_Time_Min,Routing_Source,Notes
+ROUTE-001,Farmer/FPO,Dynamic user location,Storage / collection centre,Dynamic facility,Dynamic,Dynamic,Routing API,Generate dynamically
+ROUTE-002,Farmer/FPO,Dynamic user location,Buyer,Dynamic buyer location,Dynamic,Dynamic,Routing API,Generate dynamically
+ROUTE-003,Farmer/FPO,Dynamic user location,Buyer via storage,Dynamic,Dynamic,Dynamic,Routing API,Optimization later with OR-Tools

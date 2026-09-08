@@ -1,0 +1,5 @@
+﻿cost_id,vehicle_type,capacity_tonnes,cost_per_km,fixed_cost,loading_cost,unloading_cost,toll,evidence_status,notes
+COST-001,Mini truck / pickup,TBD,TBD,TBD,TBD,TBD,TBD,Current provider quotations required,No invented rate
+COST-002,3–5 tonne truck,TBD,TBD,TBD,TBD,TBD,TBD,Current provider quotations required,No invented rate
+COST-003,Reefer truck,TBD,TBD,TBD,TBD,TBD,TBD,Current reefer quotations required,No invented rate
+COST-004,Historical NHB specialized transport example,Up to 3,N/A,N/A,N/A,N/A,N/A,Historical subsidy/norm context only,Not a current market rate
