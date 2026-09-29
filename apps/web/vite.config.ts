@@ -1,19 +1,7 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react' // or your specific framework plugin
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 5173,
-    host: '0.0.0.0',
-    watch: {
-      usePolling: true,
-    },
-    proxy: {
-      '/api/v1': {
-        target: 'http://localhost:8000',
-        changeOrigin: true,
-      },
-    },
-  },
-});
+  base: '/Agri-mandi/', // ⚠️ Replace with your actual GitHub repo name
+})
