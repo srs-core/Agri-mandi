@@ -1,13 +1,17 @@
-name: Build and Deploy
+name: Build and Deploy Monorepo App
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main"] # Change to "master" if your primary branch is master
 
 permissions:
   contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build-and-deploy:
@@ -21,15 +25,28 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install & Build
+      # Step 1: Install dependencies (if you have root package.json or subfolder)
+      - name: Install dependencies
         run: |
-          npm install
-          npm run build
+          if [ -f package.json ]; then npm install; fi
+          if [ -f apps/web/package.json ]; then cd apps/web && npm install; elif [ -f web/package.json ]; then cd web && npm install; fi
 
+      # Step 2: Build the Vite project inside the subfolder
+      - name: Build Vite App
+        run: |
+          if [ -d "apps/web" ]; then
+            cd apps/web && npm run build
+          elif [ -d "web" ]; then
+            cd web && npm run build
+          fi
+
+      # Step 3: Upload the built 'dist' folder from the subfolder
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Change to './build' if using Create React App
+          path: './apps/web/dist' # If your path is just 'web/dist', change this to './web/dist'
 
+      # Step 4: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
